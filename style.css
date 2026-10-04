@@ -36,3 +36,20 @@ h1 { font-size: 1.6rem; line-height: 1.4; }
 h2 { font-size: 1.15rem; margin-top: 2em; }
 section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 24px 16px; margin-bottom: 32px; }
 .muted { color: var(--muted); font-size: 0.9rem; }
+/* ヘルプ（help.html・help-en.html） */
+section > h2:first-child { margin-top: 1em; }
+h3 { font-size: 1rem; margin: 1.6em 0 0.4em; }
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 24px; margin-bottom: 32px; }
+.toc ol { margin: 0; padding-left: 1.4em; }
+figure { margin: 16px 0; }
+figure img { display: block; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; }
+figcaption { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 500; }
+table.keys td:last-child { white-space: nowrap; }
+kbd { font-family: ui-monospace, Consolas, monospace; font-size: 0.85em; background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; }
+@media (max-width: 480px) {
+  section, .toc { padding-left: 16px; padding-right: 16px; }
+  table.keys td:last-child { white-space: normal; }
+}

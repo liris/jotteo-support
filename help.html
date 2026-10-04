@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jotteo ヘルプ</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+<link rel="alternate" hreflang="en" href="help-en.html">
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><p>Jotteo</p></header>
+<nav><a href="index.html">サポート</a><a href="privacy.html">プライバシーポリシー</a><a href="help-en.html" lang="en" hreflang="en">English</a></nav>
+
+<h1>ヘルプ</h1>
+<p>Jotteo（ジョッティオ）の使い方をまとめています。キーボードのショートカットは、アプリの中で <kbd>Ctrl</kbd>+<kbd>/</kbd> を押しても一覧できます。</p>
+
+<nav class="toc" aria-label="目次">
+<ol>
+<li><a href="#screens">画面の見方</a></li>
+<li><a href="#input">ペン・指・マウスの使い方</a></li>
+<li><a href="#tools">ツール</a></li>
+<li><a href="#pages">ページの操作と表示</a></li>
+<li><a href="#library">ノートとフォルダの整理</a></li>
+<li><a href="#pdf">PDF・画像の読み込みと書き出し</a></li>
+<li><a href="#backup">バックアップと復元</a></li>
+<li><a href="#settings">設定</a></li>
+<li><a href="#shortcuts">キーボードショートカット</a></li>
+<li><a href="#faq">よくある質問</a></li>
+</ol>
+</nav>
+
+<section id="screens">
+<h2>画面の見方</h2>
+<h3>ライブラリ</h3>
+<p>起動すると最初に出る画面です。ノートとフォルダを並べます。</p>
+<figure><img src="images/help/ja-library.webp" width="1280" height="800" alt="ライブラリの画面。左にサイドバー、右にノートの表紙が並ぶ" loading="lazy">
+<figcaption>ライブラリ</figcaption></figure>
+<ul>
+<li><strong>サイドバー</strong>: すべてのノート・お気に入り・最近使った項目・クイックノート・フォルダ・ゴミ箱・設定。ウィンドウが狭いときは隠れ、一覧の左上の ≡ で開きます</li>
+<li><strong>検索欄</strong>（上）: ノート・フォルダの名前と、テキストボックスの文字を探します</li>
+<li><strong>新規</strong>（右上）: ノート・クイックノート・フォルダを作る、PDF・画像や .jotteo を読み込む</li>
+<li>一覧の上で、並べ替え（名前・作成日・更新日・手動）と、グリッド表示・リスト表示を切り替えます</li>
+</ul>
+<h3>ノートの画面（エディタ）</h3>
+<p>ノートを開くと出る、書き込むための画面です。</p>
+<figure><img src="images/help/ja-editor.webp" width="1280" height="800" alt="ノートの画面。上にヘッダーとツールバー、左にページ一覧、中央にページ" loading="lazy">
+<figcaption>ノートの画面</figcaption></figure>
+<ul>
+<li><strong>ヘッダー</strong>: ライブラリへ戻る、ノートの名前と保存の状態、元に戻す・やり直し、ページ一覧、ノート内検索、書き出し、その他</li>
+<li><strong>ツールバー</strong>: ペン・蛍光ペン・消しゴム・投げ縄・テキスト・画像と、選んでいるツールの色・太さ</li>
+<li><strong>ページ一覧</strong>（左）: ページのサムネイルと、しおりを付けたページ</li>
+<li><strong>ステータス</strong>（右下）: 今のページ / 全ページ数と、表示倍率</li>
+</ul>
+<p>保存の操作は要りません。書いたものは自動で保存されます。</p>
+</section>
+
+<section id="input">
+<h2>ペン・指・マウスの使い方</h2>
+<p>ペンで書き、指で動かすのが基本です。ペンを画面に近づけている間は、手のひらが触れても反応しません。</p>
+<table>
+<thead><tr><th>操作</th><th>動作</th></tr></thead>
+<tbody>
+<tr><td>ペン先</td><td>選んでいるツールで書く・消す・選ぶ</td></tr>
+<tr><td>ペンの消しゴム端（後ろ側）でこする</td><td>消しゴム（線ごと消す。設定で変えられます）</td></tr>
+<tr><td>ペンのサイドボタンを押しながら書く</td><td>押している間だけ消しゴム（設定で投げ縄・直前のツールにも）</td></tr>
+<tr><td>指 1 本でドラッグ</td><td>スクロール</td></tr>
+<tr><td>指 2 本でピンチ・ドラッグ</td><td>ズーム・スクロール</td></tr>
+<tr><td>指 2 本でタップ</td><td>元に戻す</td></tr>
+<tr><td>指 3 本でタップ</td><td>やり直し</td></tr>
+<tr><td>指で長押し / マウスの右クリック</td><td>メニュー（貼り付け、ページの追加など）</td></tr>
+<tr><td>マウスの左ドラッグ</td><td>選んでいるツールで書く・消す・選ぶ</td></tr>
+<tr><td>マウスの中ボタンでドラッグ / <kbd>Space</kbd> を押しながらドラッグ</td><td>スクロール（手のひら）</td></tr>
+<tr><td>ホイール / <kbd>Shift</kbd>+ホイール / <kbd>Ctrl</kbd>+ホイール</td><td>縦スクロール / 横スクロール / ズーム</td></tr>
+<tr><td>タッチパッドの 2 本指 / ピンチ</td><td>スクロール / ズーム</td></tr>
+</tbody>
+</table>
+<p>指でも書きたいときは、設定の「ペンと入力」で「ペンのみで書く」をオフにします。オフのときは指 1 本で書き、指 2 本でスクロール・ズームします。</p>
+</section>
+
+<section id="tools">
+<h2>ツール</h2>
+<h3>ペン <kbd>P</kbd></h3>
+<p>万年筆（筆圧で太さが変わる）とボールペン（太さがほぼ一定）があります。ツールバーに色と太さを 3 つずつ並べ、押すだけで切り替えられます（<kbd>1</kbd>〜<kbd>3</kbd>、<kbd>Shift</kbd>+<kbd>1</kbd>〜<kbd>3</kbd>）。</p>
+<figure><img src="images/help/ja-pen-settings.webp" width="440" height="690" alt="ペンの設定。ペン種、太さのスライダー、色のパレット、色の選択欄" loading="lazy">
+<figcaption>ペンの設定</figcaption></figure>
+<p>色・太さを変えるときは、選んでいる色・太さをもう一度押す（ほかの色・太さはダブルクリック、指では長押し）と「ペンの設定」が開きます。ペン種・太さ（0.1〜5.0 mm）・色（パレット・HSV・HEX・最近使った色）を選ぶと、そのボタンの中身が変わります。</p>
+<h3>蛍光ペン <kbd>H</kbd></h3>
+<p>半透明の線で、ペンの文字の下に引かれるので文字を塗りつぶしません。色・太さはペンと同じように変えられます（太さ 1〜15 mm）。</p>
+<h3>消しゴム <kbd>E</kbd></h3>
+<p>ツールバーで、モード（<strong>ストローク</strong>: 触れた線を丸ごと消す、<strong>部分</strong>: なぞった所だけ消す）と大きさ（小・中・大）を選びます。テキストボックスと画像は消しゴムでは消えません。投げ縄で選んで削除してください。</p>
+<h3>投げ縄 <kbd>L</kbd></h3>
+<p>囲んだ線・テキストボックス・画像を選びます。マウスでは <kbd>Alt</kbd> を押しながらドラッグすると四角で選べます。<kbd>Ctrl</kbd>+<kbd>A</kbd> で今のページのすべてを選びます。</p>
+<figure><img src="images/help/ja-lasso.webp" width="1280" height="800" alt="投げ縄で選んだ線。選択枠の四隅と下に回転のハンドル、上に操作のメニュー" loading="lazy">
+<figcaption>投げ縄で選んだところ</figcaption></figure>
+<ul>
+<li><strong>動かす</strong>: 枠の中をドラッグ。別のページへも動かせます。矢印キーで 1 mm、<kbd>Shift</kbd>+矢印で 10 mm</li>
+<li><strong>大きさを変える</strong>: 四隅のハンドル。縦横の比は保ちます（<kbd>Shift</kbd> を押すと自由に）</li>
+<li><strong>回す</strong>: 枠の下のハンドル。15° ずつ止まります（<kbd>Shift</kbd> を押すと自由に）</li>
+<li><strong>枠の上のメニュー</strong>: 切り取り・コピー・複製・色・削除</li>
+</ul>
+<p>コピーしたものは、別のノートにも貼り付けられます（アプリを閉じるまで残ります）。</p>
+<h3>テキスト <kbd>T</kbd></h3>
+<p>ページを押すとテキストボックスができ、キーボードで文字を打てます（ドラッグすると幅を決めて作れます）。編集している間は、ボックスの上にフォント・大きさ・色・太字・斜体・下線・取り消し線のバーが出ます。外を押すか <kbd>Esc</kbd> で編集を終えます。作ったボックスは投げ縄で動かせ、テキストツールで押すと編集に戻ります。</p>
+<h3>画像</h3>
+<p>ツールバーの画像のボタンで、ファイルを選んで入れます（PNG・JPEG・GIF・BMP・WebP・HEIC）。ノートへのドラッグ＆ドロップや、コピーした画像の貼り付け（<kbd>Ctrl</kbd>+<kbd>V</kbd>）でも入れられます。入れた画像は選んだ状態になり、投げ縄と同じように動かせます。</p>
+<h3>そのほか</h3>
+<ul>
+<li><kbd>Q</kbd>: 直前のツールに戻る</li>
+<li><kbd>Space</kbd> を押している間: 手のひら（ドラッグでスクロール）</li>
+</ul>
+</section>
+
+<section id="pages">
+<h2>ページの操作と表示</h2>
+<h3>ページを足す・消す・並べ替える</h3>
+<ul>
+<li><strong>足す</strong>: ページ一覧の下の「ページを追加」（末尾）、<kbd>Ctrl</kbd>+<kbd>Enter</kbd>（今のページの後ろ）、ページを長押し・右クリックしたメニューの「前に / 後ろにページを追加」。最後のページの下端からさらに下へ引いても足せます（設定の「自動ページ追加」）</li>
+<li><strong>サムネイルのメニュー</strong>（右クリック・長押し）: ページの複製・コピー・貼り付け、用紙を変更、ページをクリア、しおり、ページを削除</li>
+<li><strong>並べ替える</strong>: ページ一覧でサムネイルをドラッグ</li>
+<li><strong>まとめて選ぶ</strong>: <kbd>Ctrl</kbd>・<kbd>Shift</kbd>+クリックか、一覧の「選択」。選んだページを複製・コピー・用紙の変更・削除できます</li>
+</ul>
+<p>ページを消しても、「元に戻す」で戻せます。</p>
+<h3>移動と表示</h3>
+<ul>
+<li><strong>ページへ移動</strong>: 右下の「2 / 12」を押すか <kbd>Ctrl</kbd>+<kbd>G</kbd> で番号を入力。<kbd>PageUp</kbd> / <kbd>PageDown</kbd> で前後のページへ</li>
+<li><strong>しおり</strong>: ページの右上のリボンか <kbd>Ctrl</kbd>+<kbd>B</kbd>。ページ一覧の「しおり」タブに並びます</li>
+<li><strong>表示倍率</strong>: 25〜800%。右下の倍率を押すと「幅に合わせる」「ページ全体」「100%（実寸）」を選べます</li>
+<li><strong>ノート内検索</strong>（<kbd>Ctrl</kbd>+<kbd>F</kbd>）: テキストボックスの文字を探して、ページ上で黄色く示します</li>
+<li><strong>閲覧モード</strong>（<kbd>Ctrl</kbd>+<kbd>R</kbd>）: 書き込みを止め、ペンでもスクロールだけにします。ノートを読み返すときの書き損じを防ぎます</li>
+<li><strong>全画面</strong>（<kbd>F11</kbd>）: ヘッダーとページ一覧を隠し、ツールバーを上に浮かせます。<kbd>F11</kbd> か <kbd>Esc</kbd> で戻ります</li>
+</ul>
+</section>
+
+<section id="library">
+<h2>ノートとフォルダの整理</h2>
+<h3>ノートを作る</h3>
+<p>「新規」→「ノート」か <kbd>Ctrl</kbd>+<kbd>N</kbd> で、タイトル・表紙・用紙（無地・罫線・方眼・ドット・コーネル・左余白・会議メモ・ToDo）・サイズ・向き・用紙色を選んで作ります。次に作るときは、前に選んだものから始まります。</p>
+<figure><img src="images/help/ja-new-note.webp" width="640" height="745" alt="新規ノートのダイアログ。表紙と用紙の一覧、サイズ・向き・用紙色" loading="lazy">
+<figcaption>新規ノート</figcaption></figure>
+<h3>クイックノート</h3>
+<p>「新規」→「クイックノート」か <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd> で、選ばずにすぐ書き始められます。タスクバーの Jotteo のアイコンを右クリックしたメニューからも作れます。クイックノートはサイドバーの「クイックノート」に入り、何も書かずに閉じると自動で消えます。残したいものはフォルダへ移してください。</p>
+<h3>フォルダと整理</h3>
+<ul>
+<li>「新規」→「フォルダ」で、今見ている場所にフォルダを作ります。フォルダの中にもフォルダを作れます</li>
+<li>ノート・フォルダを右クリック（長押し）すると、開く・名前を変更・移動・複製・お気に入りに追加・ノート情報・書き出し・削除のメニューが出ます</li>
+<li>ドラッグ＆ドロップで、フォルダやサイドバーの項目へ移せます。並べ替えが「手動」のときは、ドラッグで順番を変えられます</li>
+<li><kbd>Ctrl</kbd>・<kbd>Shift</kbd>+クリックか、一覧の「選択」で、まとめて移動・削除できます</li>
+</ul>
+<h3>検索</h3>
+<p>ライブラリの上の検索欄（<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>）で、ノート・フォルダの名前と、テキストボックスの文字を探します。ページ内の一致を押すと、そのページが開きます。手書きの文字と PDF の文字は、まだ検索できません。</p>
+<h3>ゴミ箱</h3>
+<p>削除したノート・フォルダはゴミ箱に入り、30 日後に完全に削除されます（期間は設定で 7 日・90 日・無期限にも変えられます）。削除した直後なら、画面の下の「元に戻す」で戻せます。ゴミ箱では、項目ごとに元に戻す・完全に削除ができます。</p>
+</section>
+
+<section id="pdf">
+<h2>PDF・画像の読み込みと書き出し</h2>
+<h3>PDF・画像からノートを作る</h3>
+<p>「新規」→「PDF・画像を読み込む」か <kbd>Ctrl</kbd>+<kbd>O</kbd> でファイルを選ぶか、ライブラリにファイルをドラッグ＆ドロップします。PDF は 1 ファイルが 1 冊のノートに、画像はまとめて 1 冊（1 枚が 1 ページ）になります。ページの上には、普通のページと同じツールで書き込めます。元のファイルはノートの中に写すので、後で元を消しても問題ありません。</p>
+<p>パスワード付きの PDF には、まだ対応していません。</p>
+<h3>ノートに PDF のページを足す</h3>
+<p>ページ一覧の下の「PDF を挿入」（末尾）、ページのメニューの「後ろに PDF を挿入」、ノートへの PDF のドラッグ＆ドロップで、今のノートにページを足せます。白紙のページは、普通のページの追加で間に入れられます。</p>
+<h3>PDF に書き出す・印刷する</h3>
+<p>ノートの画面のヘッダーの「書き出し」か <kbd>Ctrl</kbd>+<kbd>E</kbd> で、PDF に書き出します。</p>
+<figure><img src="images/help/ja-export-pdf.webp" width="792" height="558" alt="PDF に書き出すダイアログ。左にプレビュー、右に範囲・用紙・手書きの形式" loading="lazy">
+<figcaption>PDF に書き出す</figcaption></figure>
+<ul>
+<li><strong>範囲</strong>: すべてのページ・現在のページ・ページ一覧で選んだページ・ページを指定（例: 1-3, 5）</li>
+<li><strong>用紙の罫線・背景を含める</strong>: オフにすると、白い紙に書いた内容だけを出します</li>
+<li><strong>手書きの形式</strong>: ベクター（拡大しても鮮明）か、画像（古いビューアでも同じ見た目）</li>
+</ul>
+<p>読み込んだ PDF の文字は、書き出した後も選択・検索できます。<kbd>Ctrl</kbd>+<kbd>P</kbd> で Windows の印刷画面を出して印刷できます。</p>
+<h3>ノートを .jotteo で受け渡す</h3>
+<p>ライブラリでノートを右クリック →「書き出し…」で、書き込みを編集できる形のまま .jotteo ファイルに書き出せます。.jotteo は「新規」→「.jotteo を読み込む」、ドラッグ＆ドロップ、ファイルのダブルクリックで取り込めます。</p>
+</section>
+
+<section id="backup">
+<h2>バックアップと復元</h2>
+<p>ノートはこの PC の中にだけ保存されます。<strong>アプリをアンインストールするとノートも消える</strong>ので、PC を替えるとき・アンインストールする前は、バックアップを取ってください。</p>
+<figure><img src="images/help/ja-settings-backup.webp" width="1280" height="360" alt="設定のバックアップ。ライブラリをバックアップ、バックアップから復元のボタン" loading="lazy">
+<figcaption>設定 &gt; バックアップ</figcaption></figure>
+<ol>
+<li>ライブラリで設定（<kbd>Ctrl</kbd>+<kbd>,</kbd>）を開き、「バックアップ」→「バックアップ…」で保存先を選びます。すべてのノートとフォルダが 1 つの .jotteolib ファイルになります（ゴミ箱の中のものは含みません）</li>
+<li>戻すときは「復元…」で .jotteolib を選ぶか、ファイルをダブルクリックします。「現在のライブラリに追加」か「置き換える…」を選びます。置き換えると、今のノートはゴミ箱の中のものも含めてすべて消え、元に戻せません</li>
+</ol>
+<p>ノートを開いている間は、バックアップと復元は使えません。ライブラリに戻ってから設定を開いてください。</p>
+</section>
+
+<section id="settings">
+<h2>設定</h2>
+<p>ライブラリのサイドバーの「設定」か <kbd>Ctrl</kbd>+<kbd>,</kbd> で開きます。変えた値はすぐ効きます。</p>
+<ul>
+<li><strong>一般</strong>: 言語、テーマ（ライト・ダーク）、起動時の画面、ゴミ箱の保持期間、設定のリセット</li>
+<li><strong>ペンと入力</strong>: ペンのみで書く、マウスで書く、筆圧の効き方、筆圧で太さを変えるペン、ペンのサイドボタン、ペンの消しゴム端、2 本指タップで元に戻す、低遅延描画、投げ縄で選ぶもの</li>
+<li><strong>ノートとページ</strong>: 自動ページ追加、新規ノートの既定、ステータスバー表示</li>
+<li><strong>バックアップ</strong>: ライブラリのバックアップと復元</li>
+<li><strong>キーボードショートカット</strong>: ショートカットの一覧</li>
+<li><strong>このアプリについて</strong>: バージョン、オープンソースライセンス、使い方の案内（初回起動時の案内をもう一度見る）</li>
+</ul>
+</section>
+
+<section id="shortcuts">
+<h2>キーボードショートカット</h2>
+<h3>アプリ全体</h3>
+<table class="keys">
+<tbody>
+<tr><td>新規ノート</td><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td></tr>
+<tr><td>クイックノート</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></td></tr>
+<tr><td>PDF / 画像を開く</td><td><kbd>Ctrl</kbd>+<kbd>O</kbd></td></tr>
+<tr><td>検索</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd></td></tr>
+<tr><td>設定</td><td><kbd>Ctrl</kbd>+<kbd>,</kbd></td></tr>
+<tr><td>ショートカット一覧</td><td><kbd>Ctrl</kbd>+<kbd>/</kbd></td></tr>
+<tr><td>全画面切替</td><td><kbd>F11</kbd></td></tr>
+<tr><td>ウィンドウを閉じる</td><td><kbd>Ctrl</kbd>+<kbd>W</kbd></td></tr>
+</tbody>
+</table>
+<h3>ノートの画面</h3>
+<table class="keys">
+<tbody>
+<tr><td>ライブラリへ戻る</td><td><kbd>Alt</kbd>+<kbd>Home</kbd> / <kbd>Esc</kbd></td></tr>
+<tr><td>元に戻す</td><td><kbd>Ctrl</kbd>+<kbd>Z</kbd></td></tr>
+<tr><td>やり直し</td><td><kbd>Ctrl</kbd>+<kbd>Y</kbd> / <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></td></tr>
+<tr><td>保存（すぐに）</td><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td></tr>
+<tr><td>ノート内検索</td><td><kbd>Ctrl</kbd>+<kbd>F</kbd></td></tr>
+<tr><td>書き出し</td><td><kbd>Ctrl</kbd>+<kbd>E</kbd></td></tr>
+<tr><td>印刷</td><td><kbd>Ctrl</kbd>+<kbd>P</kbd></td></tr>
+<tr><td>ペン / 蛍光ペン / 消しゴム / 投げ縄 / テキスト</td><td><kbd>P</kbd> / <kbd>H</kbd> / <kbd>E</kbd> / <kbd>L</kbd> / <kbd>T</kbd></td></tr>
+<tr><td>直前のツールに戻る</td><td><kbd>Q</kbd></td></tr>
+<tr><td>押している間は手のひら（スクロール）</td><td><kbd>Space</kbd></td></tr>
+<tr><td>色のプリセット 1〜3</td><td><kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td></tr>
+<tr><td>太さのプリセット 1〜3</td><td><kbd>Shift</kbd>+<kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td></tr>
+<tr><td>ズームイン / アウト</td><td><kbd>Ctrl</kbd>+<kbd>=</kbd> / <kbd>Ctrl</kbd>+<kbd>-</kbd></td></tr>
+<tr><td>幅に合わせる</td><td><kbd>Ctrl</kbd>+<kbd>0</kbd></td></tr>
+<tr><td>100%</td><td><kbd>Ctrl</kbd>+<kbd>1</kbd></td></tr>
+<tr><td>前 / 次のページ</td><td><kbd>PageUp</kbd> / <kbd>PageDown</kbd>、<kbd>Ctrl</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd></td></tr>
+<tr><td>先頭 / 末尾のページ</td><td><kbd>Ctrl</kbd>+<kbd>Home</kbd> / <kbd>Ctrl</kbd>+<kbd>End</kbd></td></tr>
+<tr><td>ページ移動</td><td><kbd>Ctrl</kbd>+<kbd>G</kbd></td></tr>
+<tr><td>ページ追加（今のページの後ろ）</td><td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td></tr>
+<tr><td>ページ一覧パネル</td><td><kbd>Ctrl</kbd>+<kbd>\</kbd></td></tr>
+<tr><td>閲覧モード</td><td><kbd>Ctrl</kbd>+<kbd>R</kbd></td></tr>
+<tr><td>しおり（テキストの編集中は太字）</td><td><kbd>Ctrl</kbd>+<kbd>B</kbd></td></tr>
+</tbody>
+</table>
+<h3>選択中</h3>
+<table class="keys">
+<tbody>
+<tr><td>すべて選択</td><td><kbd>Ctrl</kbd>+<kbd>A</kbd></td></tr>
+<tr><td>コピー / 切り取り / 貼り付け</td><td><kbd>Ctrl</kbd>+<kbd>C</kbd> / <kbd>Ctrl</kbd>+<kbd>X</kbd> / <kbd>Ctrl</kbd>+<kbd>V</kbd></td></tr>
+<tr><td>複製</td><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td></tr>
+<tr><td>削除</td><td><kbd>Delete</kbd> / <kbd>Backspace</kbd></td></tr>
+<tr><td>移動（1 mm / 10 mm）</td><td>矢印 / <kbd>Shift</kbd>+矢印</td></tr>
+<tr><td>選択解除</td><td><kbd>Esc</kbd></td></tr>
+</tbody>
+</table>
+<h3>ライブラリ</h3>
+<table class="keys">
+<tbody>
+<tr><td>名前を変更</td><td><kbd>F2</kbd></td></tr>
+<tr><td>削除（ゴミ箱へ）</td><td><kbd>Delete</kbd> / <kbd>Backspace</kbd></td></tr>
+<tr><td>すべて選択 / 選択解除</td><td><kbd>Ctrl</kbd>+<kbd>A</kbd> / <kbd>Esc</kbd></td></tr>
+<tr><td>メニューを出す</td><td><kbd>Shift</kbd>+<kbd>F10</kbd></td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="faq">
+<h2>よくある質問</h2>
+<p><strong>ノートはどこに保存されますか？</strong><br>
+この PC の中にだけ保存されます。外部へ送信されることはありません。アンインストールするとノートも消えるので、残したいノートは<a href="#backup">バックアップ</a>してください。</p>
+<p><strong>別の PC にノートを移せますか？</strong><br>
+設定の「バックアップ」で作った .jotteolib ファイルを、別の PC の Jotteo で開くと復元できます。1 冊ずつなら .jotteo で書き出して取り込めます。</p>
+<p><strong>アカウントやインターネット接続は必要ですか？</strong><br>
+いいえ。どちらも要りません。</p>
+<p><strong>指が触れると線が書かれてしまいます。</strong><br>
+設定の「ペンと入力」で「ペンのみで書く」をオンにしてください。指はスクロールとズームだけになります。</p>
+<p><strong>ペンで書くと線が遅れてついてきます。</strong><br>
+設定の「ペンと入力」の「低遅延描画」がオンになっているか確かめてください（既定でオン。Windows 11 24H2 以降で、対応する GPU が要ります。ペン（万年筆・ボールペン）の線に効き、蛍光ペンには効きません）。</p>
+<p><strong>テキストボックスや画像が消しゴムで消えません。</strong><br>
+消しゴムで消えるのは手書きの線だけです。投げ縄で選んで、<kbd>Delete</kbd> かメニューの「削除」で消してください。</p>
+<p><strong>手書きの文字を検索できますか？</strong><br>
+まだできません。検索できるのは、ノート・フォルダの名前と、テキストボックスの文字です。</p>
+<p><strong>HEIC の画像を読み込めません。</strong><br>
+Microsoft Store の「HEVC ビデオ拡張機能」を入れてください。</p>
+<p><strong>間違えて削除したノートを戻せますか？</strong><br>
+サイドバーの「ゴミ箱」から「元に戻す」で戻せます（削除してから 30 日以内。期間は設定で変えられます）。</p>
+<p>解決しないときは、<a href="index.html">サポートのページ</a>からお問い合わせください。</p>
+</section>
+
+<p class="muted">© 2026 liris</p>
+</main>
+</body>
+</html>
