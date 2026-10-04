@@ -1,0 +1,15 @@
+name: 要望・質問 / Request or question
+description: 機能の要望や使い方の質問 / Feature requests and questions
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issue は誰でも読めます。ノートの内容や個人情報は書かない・添付しないでください。
+        Issues are public. Please do not include the contents of your notes or personal information.
+  - type: textarea
+    id: what
+    attributes:
+      label: 内容 / Details
+    validations:
+      required: true

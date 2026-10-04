@@ -1,0 +1,38 @@
+/* Paper & Ink（アプリと同じ色）。原本は非公開リポジトリにある。ここは直接編集しない */
+:root {
+  --paper: #F4F1EA;
+  --surface: #FFFFFF;
+  --ink: #2F4FA8;
+  --text: #1F2328;
+  --muted: #5B6068;
+  --line: #DDD6C8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1E1F22;
+    --surface: #2A2B2F;
+    --ink: #8FA8F0;
+    --text: #E8E6E1;
+    --muted: #A8A6A0;
+    --line: #3A3B40;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: "Noto Sans JP", "Yu Gothic UI", "Segoe UI", system-ui, sans-serif;
+  line-height: 1.8;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+header img { width: 48px; height: 48px; }
+header p { margin: 0; font-size: 1.5rem; font-weight: 700; }
+nav { margin: 0 0 24px; font-size: 0.95rem; }
+nav a { margin-right: 16px; }
+a { color: var(--ink); }
+h1 { font-size: 1.6rem; line-height: 1.4; }
+h2 { font-size: 1.15rem; margin-top: 2em; }
+section { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 24px 16px; margin-bottom: 32px; }
+.muted { color: var(--muted); font-size: 0.9rem; }
