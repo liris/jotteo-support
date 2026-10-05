@@ -7,11 +7,15 @@
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="icon.png">
 <link rel="alternate" hreflang="en" href="help-en.html">
+<script src="lang.js"></script>
 </head>
 <body>
 <main>
-<header><img src="icon.png" alt=""><p>Jotteo</p></header>
-<nav><a href="index.html">サポート</a><a href="privacy.html">プライバシーポリシー</a><a href="help-en.html" lang="en" hreflang="en">English</a></nav>
+<header class="site">
+<a class="brand" href="index.html#ja"><img src="icon.png" alt="" width="36" height="36">Jotteo</a>
+<nav class="pages" aria-label="ページ"><a href="index.html#ja">サポート</a><a href="help.html" aria-current="page">ヘルプ</a><a href="privacy.html#ja">プライバシーポリシー</a></nav>
+<div class="lang"><a href="help-en.html" data-switch-lang="en" lang="en" hreflang="en"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>English</a></div>
+</header>
 
 <h1>ヘルプ</h1>
 <p>Jotteo（ジョッティオ）の使い方をまとめています。キーボードのショートカットは、アプリの中で <kbd>Ctrl</kbd>+<kbd>/</kbd> を押しても一覧できます。</p>
@@ -284,7 +288,7 @@
 Microsoft Store の「HEVC ビデオ拡張機能」を入れてください。</p>
 <p><strong>間違えて削除したノートを戻せますか？</strong><br>
 サイドバーの「ゴミ箱」から「元に戻す」で戻せます（削除してから 30 日以内。期間は設定で変えられます）。</p>
-<p>解決しないときは、<a href="index.html">サポートのページ</a>からお問い合わせください。</p>
+<p>解決しないときは、<a href="index.html#ja">サポートのページ</a>からお問い合わせください。</p>
 </section>
 
 <p class="muted">© 2026 liris</p>

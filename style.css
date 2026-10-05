@@ -26,11 +26,20 @@ body {
   line-height: 1.8;
 }
 main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
-header img { width: 48px; height: 48px; }
-header p { margin: 0; font-size: 1.5rem; font-weight: 700; }
-nav { margin: 0 0 24px; font-size: 0.95rem; }
-nav a { margin-right: 16px; }
+/* 上の帯: ロゴ・ページの切り替え・言語の切り替え */
+.site { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; padding-bottom: 12px; margin-bottom: 24px; border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-size: 1.3rem; font-weight: 700; }
+.brand img { width: 36px; height: 36px; }
+.pages { display: flex; flex-wrap: wrap; gap: 4px; }
+.pages a { padding: 4px 10px; border-radius: 8px; color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+.pages a:hover { color: var(--ink); background: var(--surface); }
+.pages a[aria-current="page"] { color: var(--ink); background: var(--surface); font-weight: 700; box-shadow: inset 0 -2px 0 var(--ink); }
+.lang { margin-left: auto; display: flex; gap: 8px; }
+.lang a { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--text); text-decoration: none; font-size: 0.9rem; }
+.lang a:hover { border-color: var(--ink); color: var(--ink); }
+.lang svg { width: 16px; height: 16px; }
+/* 日英を 1 ページに持つページ: 選んだ言語の分だけ出す（スクリプトが動かないときは両方を出す） */
+html[data-lang="ja"] [data-l="en"], html[data-lang="en"] [data-l="ja"] { display: none !important; }
 a { color: var(--ink); }
 h1 { font-size: 1.6rem; line-height: 1.4; }
 h2 { font-size: 1.15rem; margin-top: 2em; }
@@ -39,7 +48,7 @@ section { background: var(--surface); border: 1px solid var(--line); border-radi
 /* ヘルプ（help.html・help-en.html） */
 section > h2:first-child { margin-top: 1em; }
 h3 { font-size: 1rem; margin: 1.6em 0 0.4em; }
-.toc { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 24px; margin-bottom: 32px; }
+.toc { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 24px; margin-bottom: 32px; font-size: 0.95rem; }
 .toc ol { margin: 0; padding-left: 1.4em; }
 figure { margin: 16px 0; }
 figure img { display: block; max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; }
@@ -49,6 +58,9 @@ th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom:
 th { color: var(--muted); font-weight: 500; }
 table.keys td:last-child { white-space: nowrap; }
 kbd { font-family: ui-monospace, Consolas, monospace; font-size: 0.85em; background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; }
+@media (max-width: 600px) {
+  .pages { order: 3; width: 100%; }
+}
 @media (max-width: 480px) {
   section, .toc { padding-left: 16px; padding-right: 16px; }
   table.keys td:last-child { white-space: normal; }

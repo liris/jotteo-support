@@ -1,18 +1,22 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" data-bilingual data-title-ja="Jotteo プライバシーポリシー" data-title-en="Jotteo Privacy Policy">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jotteo プライバシーポリシー / Privacy Policy</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="icon.png">
+<script src="lang.js"></script>
 </head>
 <body>
 <main>
-<header><img src="icon.png" alt=""><p>Jotteo</p></header>
-<nav><a href="#ja">日本語</a><a href="#en">English</a><a href="index.html">サポート / Support</a><a href="help.html">ヘルプ</a><a href="help-en.html" lang="en">Help</a></nav>
+<header class="site">
+<a class="brand" href="index.html"><img src="icon.png" alt="" width="36" height="36">Jotteo</a>
+<nav class="pages" aria-label="Jotteo"><a href="index.html" data-l="ja">サポート</a><a href="index.html" data-l="en" lang="en">Support</a><a href="help.html" data-l="ja">ヘルプ</a><a href="help-en.html" data-l="en" lang="en">Help</a><a href="privacy.html" data-l="ja" aria-current="page">プライバシーポリシー</a><a href="privacy.html" data-l="en" lang="en" aria-current="page">Privacy Policy</a></nav>
+<div class="lang"><a href="#en" data-switch-lang="en" data-l="ja" lang="en" hreflang="en"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>English</a><a href="#ja" data-switch-lang="ja" data-l="en" lang="ja" hreflang="ja"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>日本語</a></div>
+</header>
 
-<section id="ja" lang="ja">
+<section id="ja" lang="ja" data-l="ja">
 <h1>プライバシーポリシー</h1>
 <p class="muted">施行日: 2026 年 10 月 4 日</p>
 <p>このポリシーは、liris（以下「開発者」）が提供する Windows 用のノートアプリ Jotteo（以下「本アプリ」）での情報の扱いを説明します。</p>
@@ -39,7 +43,7 @@
 <p><a href="https://github.com/liris/jotteo-support/issues">https://github.com/liris/jotteo-support/issues</a></p>
 </section>
 
-<section id="en" lang="en">
+<section id="en" lang="en" data-l="en">
 <h1>Privacy Policy</h1>
 <p class="muted">Effective date: October 4, 2026</p>
 <p>This policy explains how Jotteo (the "App"), a note-taking app for Windows provided by liris (the "Developer"), handles information.</p>
