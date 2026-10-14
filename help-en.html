@@ -18,7 +18,7 @@
 </header>
 
 <h1>Help</h1>
-<p>How to use Jotteo. In the app, press <kbd>Ctrl</kbd>+<kbd>/</kbd> to see all keyboard shortcuts.</p>
+<p>How to use Jotteo. In the app, press <kbd>F1</kbd> to open this page, and <kbd>Ctrl</kbd>+<kbd>/</kbd> to see all keyboard shortcuts.</p>
 
 <nav class="toc" aria-label="Contents">
 <ol>
@@ -27,8 +27,9 @@
 <li><a href="#tools">Tools</a></li>
 <li><a href="#pages">Pages and viewing</a></li>
 <li><a href="#library">Organizing notes and folders</a></li>
+<li><a href="#search">Search and handwriting recognition</a></li>
 <li><a href="#pdf">Importing and exporting PDFs and images</a></li>
-<li><a href="#backup">Backup and restore</a></li>
+<li><a href="#backup">Backup and library location</a></li>
 <li><a href="#settings">Settings</a></li>
 <li><a href="#shortcuts">Keyboard shortcuts</a></li>
 <li><a href="#faq">FAQ</a></li>
@@ -39,25 +40,26 @@
 <h2>The screens</h2>
 <h3>Library</h3>
 <p>The first screen you see when Jotteo starts. It lists your notes and folders.</p>
-<figure><img src="images/help/en-library.webp" width="1280" height="800" alt="The library: a sidebar on the left and note covers on the right" loading="lazy">
+<figure><img src="images/help/en-library.webp" width="1280" height="800" alt="The library: a sidebar with folders and tags on the left, and folders and note covers on the right" loading="lazy">
 <figcaption>Library</figcaption></figure>
 <ul>
-<li><strong>Sidebar</strong>: All notes, Favorites, Recent, Quick notes, Folders, Trash and Settings. In a narrow window it is hidden; open it with ≡ at the top left of the list</li>
-<li><strong>Search box</strong> (top): finds note and folder names and text in text boxes</li>
+<li><strong>Sidebar</strong>: All notes, Favorites, Recent, Quick notes, Folders, Tags, Trash and Settings. In a narrow window it is hidden; open it with ≡ at the top left of the list</li>
+<li><strong>Search box</strong> (top): finds note and folder names, text in text boxes, handwriting and text in PDFs (see <a href="#search">Search and handwriting recognition</a>)</li>
 <li><strong>New</strong> (top right): create a note, quick note or folder, or import a PDF, image or .jotteo file</li>
 <li>Above the list, choose the sort order (Name, Date created, Date modified, Manual) and switch between grid view and list view</li>
 </ul>
 <h3>The note screen (editor)</h3>
 <p>The screen for writing, shown when you open a note.</p>
-<figure><img src="images/help/en-editor.webp" width="1280" height="800" alt="The note screen: the header and toolbar at the top, page thumbnails on the left and the page in the middle" loading="lazy">
+<figure><img src="images/help/en-editor.webp" width="1280" height="800" alt="The note screen: the header and toolbar at the top, the page panel on the left and a handwritten page with a diagram drawn with the Shapes tool in the middle" loading="lazy">
 <figcaption>The note screen</figcaption></figure>
 <ul>
-<li><strong>Header</strong>: Back to library, the note name and save status, Undo and Redo, Pages, Search in note, Export and More</li>
-<li><strong>Toolbar</strong>: Pen, Highlighter, Eraser, Lasso, Text and Image, plus colors and widths for the current tool</li>
-<li><strong>Page panel</strong> (left): page thumbnails and bookmarked pages</li>
-<li><strong>Status</strong> (bottom right): current page / total pages and the zoom level</li>
+<li><strong>Header</strong>: Back to library, the note name and save status, Undo and Redo, Pages, Search in note, Export and More (Scrolling direction)</li>
+<li><strong>Toolbar</strong>: Pen, Highlighter, Eraser, Lasso, Shapes, Text, Image, Elements and Laser pointer, plus colors and widths for the current tool. You can place it at the top, left, right or floating (Toolbar position under Settings &gt; Pen and input)</li>
+<li><strong>Page panel</strong> (left): the Pages, Outline and Bookmarks tabs</li>
+<li><strong>Status</strong> (bottom right): current page / total pages and the zoom level. After you jump to another page, a Back or Forward button appears at the bottom left</li>
 </ul>
 <p>There is no need to save. Everything you write is saved automatically.</p>
+<p>Turn on Left-handed mode in Settings to put the page panel on the right and the status at the bottom left.</p>
 </section>
 
 <section id="input">
@@ -67,48 +69,75 @@
 <thead><tr><th>Action</th><th>Result</th></tr></thead>
 <tbody>
 <tr><td>Pen tip</td><td>Write, erase or select with the current tool</td></tr>
-<tr><td>Rub with the eraser end of the pen</td><td>Erase (whole strokes; you can change this in Settings)</td></tr>
+<tr><td>Rub with the eraser end of the pen</td><td>Erase (only what you touch; you can switch to whole strokes in Settings)</td></tr>
 <tr><td>Hold the pen's side button while writing</td><td>Eraser while held (or Lasso / Previous tool in Settings)</td></tr>
+<tr><td>Press the pen's top button (Surface Pen and others)</td><td>Create a quick note</td></tr>
+<tr><td>Double-click the pen's top button</td><td>Switch to the eraser and back (or Previous tool, with Pen double-tap in Settings)</td></tr>
 <tr><td>Drag with one finger</td><td>Scroll</td></tr>
 <tr><td>Pinch or drag with two fingers</td><td>Zoom or scroll</td></tr>
 <tr><td>Tap with two fingers</td><td>Undo</td></tr>
 <tr><td>Tap with three fingers</td><td>Redo</td></tr>
-<tr><td>Press and hold / right-click</td><td>Menu (Paste, Add page and more)</td></tr>
+<tr><td>Press and hold / right-click</td><td>Menu (Paste, Add page and more). In Read mode, or when "Only write with a pen" is on, press and hold on PDF text with a finger to select the text</td></tr>
 <tr><td>Drag with the left mouse button</td><td>Write, erase or select with the current tool</td></tr>
 <tr><td>Drag with the middle button / hold <kbd>Space</kbd> and drag</td><td>Pan</td></tr>
+<tr><td>Mouse back / forward buttons</td><td>Go back / forward in the page history</td></tr>
 <tr><td>Wheel / <kbd>Shift</kbd>+wheel / <kbd>Ctrl</kbd>+wheel</td><td>Scroll vertically / horizontally / zoom</td></tr>
 <tr><td>Two fingers / pinch on the touchpad</td><td>Scroll / zoom</td></tr>
 </tbody>
 </table>
 <p>To write with your finger, turn off "Only write with a pen" under Settings &gt; Pen and input. Then one finger writes and two fingers scroll and zoom.</p>
+<p>The pen's top button works while you use Jotteo, once the Windows pen settings let apps override the shortcut button. To start Jotteo with the top button when it isn't running, assign Jotteo to the top button in the pen settings. You can open the pen settings with Open pen settings next to Pen top button under Settings &gt; Pen and input.</p>
 </section>
 
 <section id="tools">
 <h2>Tools</h2>
 <h3>Pen <kbd>P</kbd></h3>
-<p>Choose a fountain pen (width changes with pressure) or a ballpoint (nearly constant width). The toolbar shows three colors and three widths; click one to switch (<kbd>1</kbd>–<kbd>3</kbd>, <kbd>Shift</kbd>+<kbd>1</kbd>–<kbd>3</kbd>).</p>
-<figure><img src="images/help/en-pen-settings.webp" width="440" height="690" alt="Pen settings: pen type, width slider, color palette and color picker" loading="lazy">
+<p>Choose a fountain pen (width changes with pressure), a ballpoint (nearly constant width) or a brush pen (width changes a lot with pressure, with tapered starts and ends). The toolbar shows three colors and three widths; click one to switch (<kbd>1</kbd>–<kbd>3</kbd>, <kbd>Shift</kbd>+<kbd>1</kbd>–<kbd>3</kbd>).</p>
+<figure><img src="images/help/en-pen-settings.webp" width="440" height="690" alt="Pen settings: fountain pen, ballpoint or brush pen, width slider, color palette and color picker" loading="lazy">
 <figcaption>Pen settings</figcaption></figure>
 <p>To change a color or width, click the selected one again (or double-click another one; press and hold with a finger) to open Pen settings. The pen type, width (0.1–5.0 mm) and color (palette, HSV, HEX or recent colors) you choose replace that button.</p>
+<ul>
+<li><strong>Draw and hold to make shapes</strong>: after drawing a line, keep the pen down and hold it still for 0.5 seconds to turn it into a line, circle, rectangle or other shape. Move the pen before lifting it to adjust the size or direction. Use Undo to get your original line back (you can turn this off with "Draw and hold to make shapes" in Settings)</li>
+<li><strong>Stroke stabilization</strong>: smooths out small wobbles in your lines. Set the strength with Stroke stabilization under Settings &gt; Pen and input</li>
+</ul>
 <h3>Highlighter <kbd>H</kbd></h3>
-<p>Draws see-through lines underneath your pen writing, so text is never covered. Change colors and widths the same way as the pen (width 1–15 mm).</p>
+<p>Draws see-through lines underneath your pen writing, so text is never covered. Change colors and widths the same way as the pen (width 1–15 mm). After highlighting, keep the pen down and hold it still for 0.5 seconds to make the line straight ("Hold the highlighter to straighten" in Settings).</p>
 <h3>Eraser <kbd>E</kbd></h3>
-<p>In the toolbar, choose the mode (<strong>Stroke</strong>: erases every stroke it touches, <strong>Partial</strong>: erases only where you rub) and the size (small, medium, large). The eraser does not erase text boxes or images; select them with the lasso and delete them.</p>
+<p>In the toolbar, choose the mode (<strong>Stroke</strong>: erases every stroke it touches, <strong>Partial</strong>: erases only where you rub) and the size (small, medium, large). Turn on "Erase highlighter only" next to them to erase only highlighter strokes and leave your pen writing alone. The eraser does not erase text boxes or images; select them with the lasso and delete them.</p>
 <h3>Lasso <kbd>L</kbd></h3>
-<p>Selects the strokes, text boxes and images you circle. With a mouse, hold <kbd>Alt</kbd> while dragging to select a rectangle. <kbd>Ctrl</kbd>+<kbd>A</kbd> selects everything on the current page.</p>
-<figure><img src="images/help/en-lasso.webp" width="1280" height="800" alt="Strokes selected with the lasso: handles at the corners and below the frame, and an action menu above" loading="lazy">
+<p>Selects the strokes, shapes, text boxes and images you circle. With a mouse, hold <kbd>Alt</kbd> while dragging to select a rectangle. <kbd>Ctrl</kbd>+<kbd>A</kbd> selects everything on the current page.</p>
+<figure><img src="images/help/en-lasso.webp" width="1280" height="800" alt="A diagram selected with the lasso: handles at the corners and below the frame, and an action menu above" loading="lazy">
 <figcaption>A lasso selection</figcaption></figure>
 <ul>
 <li><strong>Move</strong>: drag inside the frame, even onto another page. Arrow keys move by 1 mm, <kbd>Shift</kbd>+arrow by 10 mm</li>
 <li><strong>Resize</strong>: drag a corner handle. The aspect ratio is kept (hold <kbd>Shift</kbd> to change it)</li>
 <li><strong>Rotate</strong>: drag the handle below the frame. It snaps every 15° (hold <kbd>Shift</kbd> to rotate freely)</li>
-<li><strong>Menu above the frame</strong>: Cut, Copy, Duplicate, Color and Delete</li>
+<li><strong>Menu above the frame</strong>: Cut, Copy, Duplicate, Color, Fill (with closed shapes), Width (with strokes or shapes), Crop (with a single image), Delete and More</li>
+<li><strong>More</strong>: Convert to text and Copy as text (see <a href="#search">Search and handwriting recognition</a>), Bring to front, Bring forward, Send backward, Send to back, Lock and Unlock, Copy as image and Save as image, and Add to elements</li>
 </ul>
-<p>What you copy can be pasted into other notes too (it is kept until you close the app).</p>
+<p>What you copy can be pasted into other notes too (it is kept until you close the app). Copy as image copies the selected area as it looks on screen, so you can paste it into other apps. Save as image saves it as a PNG file.</p>
+<p>Lock shapes, text boxes and images so they can't be moved or deleted by accident. Locked items can still be selected. When only locked items are selected, the menu shows Unlock in place of Delete; otherwise choose Unlock under More.</p>
+<h3>Shapes <kbd>S</kbd></h3>
+<p>Turns what you draw into a line, arrow, circle, ellipse, triangle, rectangle, polygon or arc when you lift the pen. Lines that can't be recognized stay as handwriting. In the toolbar, choose the line color and width and the Fill (No fill, Same as line (translucent) or another color). With the Shapes tool, tap the outline of a shape to select it, then drag the vertex and end handles to change its form.</p>
 <h3>Text <kbd>T</kbd></h3>
-<p>Click a page to add a text box and type with the keyboard (drag to set its width). While editing, a bar above the box sets the font, size, color, bold, italic, underline and strikethrough. Click outside or press <kbd>Esc</kbd> to finish. Move a text box with the lasso; click it with the Text tool to edit it again.</p>
+<p>Click a page to add a text box and type with the keyboard (drag to set its width). With the Text tool, you can also press <kbd>Enter</kbd> to add a new box in the middle of the screen. Click outside or press <kbd>Esc</kbd> to finish. Move a text box with the lasso; click it with the Text tool to edit it again (or press <kbd>Enter</kbd> or <kbd>F2</kbd> when it is the only item selected).</p>
+<p>While editing, a format bar appears above the box.</p>
+<ul>
+<li><strong>Characters</strong>: font, size, color, bold, italic, underline and strikethrough</li>
+<li><strong>Alignment and spacing</strong>: align left, center or align right, and line spacing (1.0, 1.15, 1.5 or 2.0)</li>
+<li><strong>List</strong>: bulleted or numbered lists, with Increase indent and Decrease indent (<kbd>Tab</kbd> / <kbd>Shift</kbd>+<kbd>Tab</kbd>). You can also start a list by typing "- " or "1. " at the start of a line</li>
+<li><strong>Border and background</strong>: background color, border color and width, and rounded corners. Set as default style uses the current formatting for new text boxes</li>
+</ul>
 <h3>Image</h3>
 <p>Click the image button in the toolbar and choose files (PNG, JPEG, GIF, BMP, WebP or HEIC). You can also drag files onto the note or paste a copied image (<kbd>Ctrl</kbd>+<kbd>V</kbd>). The inserted image is selected, so you can move it like a lasso selection.</p>
+<ul>
+<li><strong>Crop</strong>: select a single image and choose Crop in the menu to set the visible area. The original image is kept, so you can crop again at any time</li>
+<li><strong>Insert screenshot</strong>: right-click (or press and hold) a page and choose Insert screenshot to open the Windows snipping screen. The screenshot is placed where you opened the menu</li>
+</ul>
+<h3>Elements</h3>
+<p>Save handwriting, shapes and images you use often, and place them again whenever you like. Select them with the lasso and choose More &gt; Add to elements. Click Elements in the toolbar to open the list; click an element to place it in the middle of the current page, or drag it to where you want it. You can sort elements into collections (+ at the bottom of the list creates a new collection). Right-click (or press and hold) an element to rename, move or delete it.</p>
+<h3>Laser pointer <kbd>K</kbd></h3>
+<p>Use it to point things out while showing your screen. The red line fades after a second and is never saved in the note. In the toolbar, choose Trail (draws a line) or Dot (just a dot).</p>
 <h3>More</h3>
 <ul>
 <li><kbd>Q</kbd>: switch back to the previous tool</li>
@@ -121,91 +150,172 @@
 <h3>Add, delete and reorder pages</h3>
 <ul>
 <li><strong>Add</strong>: Add page below the page panel (at the end), <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (after the current page), or Add page before / after in the menu you get by pressing and holding or right-clicking a page. You can also pull down past the bottom of the last page (Add pages automatically in Settings)</li>
-<li><strong>Thumbnail menu</strong> (right-click or press and hold): Duplicate page, Copy page, Paste page, Change paper, Clear page, Bookmark and Delete page</li>
+<li><strong>Thumbnail menu</strong> (right-click or press and hold): Duplicate page, Copy page, Copy as image, Paste page, Move to another note, Copy to another note, Change paper, Adjust margins, Clear page, Bookmark, Add to outline, Rotate page and Delete page</li>
 <li><strong>Reorder</strong>: drag thumbnails in the page panel</li>
-<li><strong>Select several</strong>: <kbd>Ctrl</kbd>/<kbd>Shift</kbd>+click or Select in the panel, then duplicate, copy, change the paper of, or delete them</li>
+<li><strong>Select several</strong>: <kbd>Ctrl</kbd>/<kbd>Shift</kbd>+click or Select in the panel, then duplicate, copy, move, rotate, change the paper of, or delete them</li>
 </ul>
 <p>Deleted pages can be restored with Undo.</p>
+<h3>Change the paper, size and orientation</h3>
+<ul>
+<li><strong>Change paper</strong>: besides the paper type, spacing and paper color, you can change the size (A4, A5, B5, Letter, Screen size or Custom) and orientation (Portrait or Landscape). Apply it to This page, the selected pages or All pages. What you wrote stays where it is</li>
+<li><strong>Rotate page</strong>: rotates the page 90° clockwise each time, together with what you wrote on it. Useful for fixing sideways PDF pages</li>
+<li><strong>Adjust margins</strong>: adds blank white space to the right and bottom of PDF and image pages for writing</li>
+</ul>
+<h3>Exchange pages with other notes</h3>
+<ul>
+<li><strong>Move to another note / Copy to another note</strong>: puts the selected pages at the end of the note you choose</li>
+<li><strong>Insert from a note</strong>: use Insert from a note below the page panel (at the end) or Insert from a note after in a page's menu, choose a note, then choose the pages to insert</li>
+<li>When notes are open in two windows, drag pages from the page panel or a lasso selection onto the note in the other window to copy them (hold <kbd>Shift</kbd> when you drop to move them instead)</li>
+</ul>
+<h3>Outline</h3>
+<p>Give pages headings and list them under the Outline tab of the page panel. Choose Add to outline (Add page to outline on the page itself) in a thumbnail's or page's menu and type a name. Click an item to go to that page. Right-click (or press and hold) an item to Rename, Indent, Outdent or Remove from outline it. Indented items are grouped under the item above them. Bookmarks in a PDF are added to the outline when you import it.</p>
 <h3>Navigating and viewing</h3>
 <ul>
 <li><strong>Go to page</strong>: click "2 / 12" at the bottom right or press <kbd>Ctrl</kbd>+<kbd>G</kbd> and type a number. <kbd>PageUp</kbd> / <kbd>PageDown</kbd> go to the previous or next page</li>
+<li><strong>Back and forward</strong>: after jumping to another page from the outline, a thumbnail, a bookmark, the page number or a PDF link, press <kbd>Alt</kbd>+<kbd>←</kbd> or click Back at the bottom left to return (<kbd>Alt</kbd>+<kbd>→</kbd> goes forward)</li>
 <li><strong>Bookmarks</strong>: the ribbon at the top right of a page or <kbd>Ctrl</kbd>+<kbd>B</kbd>. Bookmarked pages appear under the Bookmarks tab of the page panel</li>
 <li><strong>Zoom</strong>: 25–800%. Click the zoom level at the bottom right for Fit width, Whole page or 100% (actual size)</li>
-<li><strong>Search in note</strong> (<kbd>Ctrl</kbd>+<kbd>F</kbd>): finds text in text boxes and highlights it in yellow on the page</li>
-<li><strong>Read mode</strong> (<kbd>Ctrl</kbd>+<kbd>R</kbd>): turns writing off so the pen only scrolls, so you don't leave stray marks while reading</li>
-<li><strong>Full screen</strong> (<kbd>F11</kbd>): hides the header and page panel and floats the toolbar at the top. Press <kbd>F11</kbd> or <kbd>Esc</kbd> to return</li>
+<li><strong>Scrolling direction</strong>: under More &gt; Scrolling direction in the header, choose for each note whether pages scroll vertically or flip horizontally one at a time. When flipping, swipe with a finger or press <kbd>←</kbd> / <kbd>→</kbd>. Set the default for notes under Settings &gt; Notes and pages</li>
+<li><strong>Search in note</strong> (<kbd>Ctrl</kbd>+<kbd>F</kbd>): finds text in text boxes, handwriting and text in PDFs, and highlights it in yellow on the page</li>
+<li><strong>Read mode</strong> (<kbd>Ctrl</kbd>+<kbd>R</kbd>): turns writing off so the pen only scrolls, so you don't leave stray marks while reading. You can still select PDF text and follow links</li>
+<li><strong>Full screen</strong> (<kbd>F11</kbd>): hides the header and page panel and floats the toolbar. Press <kbd>F11</kbd> or <kbd>Esc</kbd> to return</li>
+<li><strong>Paper in dark mode</strong>: turn on "Invert paper in dark mode" in Settings to show paper and ink in dark colors with the dark theme. Exports and printing keep the original colors</li>
 </ul>
 </section>
 
 <section id="library">
 <h2>Organizing notes and folders</h2>
 <h3>Create a note</h3>
-<p>Choose New &gt; Note or press <kbd>Ctrl</kbd>+<kbd>N</kbd>, then pick a title, cover, paper (Blank, Ruled, Grid, Dot, Cornell, Margin, Meeting or To-do), size, orientation and paper color. Your choices are remembered for the next note.</p>
-<figure><img src="images/help/en-new-note.webp" width="640" height="800" alt="The New note dialog: covers and papers, size, orientation and paper color" loading="lazy">
+<p>Choose New &gt; Note or press <kbd>Ctrl</kbd>+<kbd>N</kbd>, then pick a title, cover, paper, size, orientation and paper color. Your choices are remembered for the next note.</p>
+<figure><img src="images/help/en-new-note.webp" width="640" height="800" alt="The New note dialog: title, covers, Choose image, papers, line spacing and My templates" loading="lazy">
 <figcaption>New note</figcaption></figure>
+<ul>
+<li><strong>Paper</strong>: Blank, Ruled, Grid, Dot, Cornell, Margin, Meeting, To-do, Music (staff paper) or Manuscript (vertical Japanese manuscript paper). For ruled, grid, dot and some other papers you can also choose the line spacing (5–8 mm)</li>
+<li><strong>My templates</strong>: choose Import template… and pick a PDF (its first page) or an image to use it as paper. Right-click (or press and hold) a template to rename, reorder or delete it</li>
+<li><strong>Cover</strong>: besides the 20 built-in covers, choose Choose image… to use any image (or the first page of a PDF) as the cover</li>
+</ul>
 <h3>Quick notes</h3>
-<p>Choose New &gt; Quick note or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd> to start writing right away. You can also create one from the menu you get by right-clicking the Jotteo icon on the taskbar. Quick notes are kept under Quick notes in the sidebar, and one you close without writing anything is removed automatically. Move the ones you want to keep into a folder.</p>
+<p>Choose New &gt; Quick note or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd> to start writing right away. You can also create one from the menu you get by right-clicking the Jotteo icon on the taskbar, or with the pen's top button. Quick notes are kept under Quick notes in the sidebar, and one you close without writing anything is removed automatically. Move the ones you want to keep into a folder.</p>
 <h3>Folders and organizing</h3>
 <ul>
 <li>Choose New &gt; Folder to create a folder where you are. Folders can contain folders</li>
-<li>Right-click (or press and hold) a note or folder for Open, Rename, Move, Duplicate, Add to favorites, Note info, Export and Delete</li>
+<li>Right-click (or press and hold) a note or folder for Open, Open in New Window, Rename, Move, Duplicate, Add to favorites, Change cover, Tags, Note info, Export and Delete</li>
 <li>Drag and drop items onto folders or sidebar entries to move them. When the sort order is Manual, drag to change the order</li>
 <li>Use <kbd>Ctrl</kbd>/<kbd>Shift</kbd>+click or Select above the list to move or delete several items at once</li>
 </ul>
-<h3>Search</h3>
-<p>The search box at the top of the library (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>) finds note and folder names and text in text boxes. Click a match in a page to open that page. Handwriting and text in PDFs can't be searched yet.</p>
+<h3>Tags</h3>
+<p>Tag notes to see them together across folders. Right-click a note and choose Tags…, then pick tags, or type a name and press <kbd>Enter</kbd> to create one (a note can have several tags). Your tags are listed under Tags in the sidebar; click one to show only the notes with that tag. Right-click a tag in the sidebar to rename or delete it.</p>
+<h3>Change a cover</h3>
+<p>Right-click a note and choose Change cover… to pick a different cover. You can change the covers of several selected notes at once. When you export a PDF, you can also include the cover as the first page.</p>
+<h3>Open in a new window</h3>
+<p>Right-click a note and choose Open in New Window, or select it and press <kbd>Shift</kbd>+<kbd>Enter</kbd>, to open it in a separate window. Use it to compare two notes side by side or to copy pages between them. Set "On startup, show" in Settings to "Windows from last time" to reopen the windows and pages you had open when Jotteo starts next time.</p>
 <h3>Trash</h3>
 <p>Deleted notes and folders go to the Trash and are permanently deleted after 30 days (you can change this to 7 or 90 days or Forever in Settings). Right after deleting, click Undo at the bottom of the screen. In the Trash, you can restore or permanently delete each item.</p>
+</section>
+
+<section id="search">
+<h2>Search and handwriting recognition</h2>
+<h3>Search the library</h3>
+<p>The search box at the top of the library (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>) finds note and folder names, text in text boxes, handwriting and text in PDFs. Click a match in a page to open that page with the match highlighted in yellow.</p>
+<p>Use the buttons above the results to narrow them down.</p>
+<ul>
+<li><strong>Type</strong>: All, Handwriting, PDF or Text</li>
+<li><strong>Folder</strong>: only a folder you choose (including the folders inside it) or Quick notes</li>
+<li><strong>Tags</strong>: only notes that have all the tags you choose</li>
+<li><strong>Modified</strong>: Today, Yesterday, This week, Last week, This month, Last month, This year or Last year</li>
+</ul>
+<h3>Handwriting recognition</h3>
+<p>Jotteo reads your handwriting in the background so you can search it. It uses Windows handwriting recognition and runs only on this PC. The contents of your notes are never sent anywhere.</p>
+<ul>
+<li>Under Settings &gt; Search and handwriting recognition, turn recognition on or off, choose the recognition language (Japanese, English or Japanese + English) and check the progress</li>
+<li>Recognition needs the Windows handwriting language pack for that language. If Settings says it is missing, add it from Open language settings</li>
+<li>The recognized text isn't shown on screen. Messy or misread words may not be found</li>
+</ul>
+<h3>Turn handwriting into text</h3>
+<p>Select handwriting with the lasso and use More.</p>
+<ul>
+<li><strong>Convert to text</strong>: replaces the handwriting with a text box of the same size and color. Undo brings the handwriting back</li>
+<li><strong>Copy as text</strong>: copies the recognized text so you can paste it into other apps</li>
+</ul>
 </section>
 
 <section id="pdf">
 <h2>Importing and exporting PDFs and images</h2>
 <h3>Create a note from a PDF or images</h3>
 <p>Choose New &gt; Import PDF or image or press <kbd>Ctrl</kbd>+<kbd>O</kbd> and pick files, or drag files onto the library. Each PDF becomes one note; images are combined into one note with one image per page. You can write on these pages with the same tools as any page. The original file is copied into the note, so it's fine to delete it afterwards.</p>
-<p>Password-protected PDFs aren't supported yet.</p>
+<ul>
+<li>When you pick a single PDF, you can choose which pages to import (e.g. 1-3, 5)</li>
+<li>For a password-protected PDF, Jotteo asks for the password when importing. After that, the note opens without a password</li>
+<li>Bookmarks in the PDF are added to the note's outline</li>
+<li>You can also send PDFs and images to Jotteo from other apps with Windows Share; they are imported as new notes</li>
+</ul>
 <h3>Add PDF pages to a note</h3>
 <p>Use Insert PDF below the page panel (at the end), Insert PDF after in a page's menu, or drag a PDF onto the note. To put a blank page in between, just add a page.</p>
-<h3>Export to PDF and print</h3>
-<p>On the note screen, click Export in the header or press <kbd>Ctrl</kbd>+<kbd>E</kbd> to export a PDF.</p>
-<figure><img src="images/help/en-export-pdf.webp" width="792" height="558" alt="The Export to PDF dialog: a preview on the left, and range, paper and handwriting options on the right" loading="lazy">
-<figcaption>Export to PDF</figcaption></figure>
+<h3>PDF text and links</h3>
 <ul>
+<li><strong>Select and copy text</strong>: in Read mode (<kbd>Ctrl</kbd>+<kbd>R</kbd>), drag over PDF text with the mouse, or press and hold it with the pen or a finger. While editing, if "Only write with a pen" is on, you can also press and hold with a finger. Drag the handles at both ends to adjust the selection, then choose Copy or press <kbd>Ctrl</kbd>+<kbd>C</kbd></li>
+<li><strong>Links</strong>: in Read mode, click a link in a PDF to go to the page it points to, or to open a web link in your browser. While editing, you can also tap a link with a finger that scrolls (when "Only write with a pen" is on)</li>
+</ul>
+<h3>Export and print</h3>
+<p>On the note screen, click Export in the header or press <kbd>Ctrl</kbd>+<kbd>E</kbd> to export a PDF or images.</p>
+<figure><img src="images/help/en-export-pdf.webp" width="792" height="688" alt="The Export dialog: a preview on the left, and format, range, paper, cover, outline and handwriting options on the right" loading="lazy">
+<figcaption>Export</figcaption></figure>
+<ul>
+<li><strong>Format</strong>: PDF, PNG or JPEG. For images, choose the resolution (96, 150 or 300 dpi); two or more pages are saved as one file per page</li>
 <li><strong>Range</strong>: All pages, Current page, the pages selected in the page panel, or Pages (e.g. 1-3, 5)</li>
 <li><strong>Include paper lines and background</strong>: when off, only what you wrote is exported on white pages</li>
-<li><strong>Handwriting</strong>: Vector (sharp at any zoom) or Image (looks the same in older viewers)</li>
+<li><strong>Include the cover</strong> (PDF): adds the cover as the first page</li>
+<li><strong>Export the outline as PDF bookmarks</strong> (PDF): turns the note's outline into PDF bookmarks</li>
+<li><strong>Handwriting</strong> (PDF): Vector (sharp at any zoom) or Image (looks the same in older viewers)</li>
+<li><strong>Share…</strong>: exports with the chosen settings and hands the file to the Windows share screen (Mail, Teams and more)</li>
 </ul>
-<p>Text in imported PDFs stays selectable and searchable after export. Press <kbd>Ctrl</kbd>+<kbd>P</kbd> to print with the Windows print dialog.</p>
+<p>Text in imported PDFs stays selectable and searchable after export. Press <kbd>Ctrl</kbd>+<kbd>P</kbd> to print with the Windows print dialog. To paste a single page into another app, use Copy as image in the thumbnail menu or Copy page as image in the page's menu.</p>
 <h3>Share notes as .jotteo files</h3>
 <p>In the library, right-click a note and choose Export… to save it as a .jotteo file that stays fully editable. Import .jotteo files with New &gt; Import .jotteo, by dragging them onto the library, or by double-clicking them.</p>
+<p>When you double-click a file, you can choose Import or Open read-only. Open read-only opens the note without adding it to your library. To keep it, click Import to library in the bar at the top. You can choose what happens every time with "When opening a .jotteo file" in Settings.</p>
 </section>
 
 <section id="backup">
-<h2>Backup and restore</h2>
-<p>Your notes are stored only on this PC. <strong>Uninstalling Jotteo also deletes your notes</strong>, so make a backup before switching PCs or uninstalling.</p>
-<figure><img src="images/help/en-settings-backup.webp" width="1280" height="360" alt="Settings &gt; Backup: Back up library and Restore from backup buttons" loading="lazy">
+<h2>Backup and library location</h2>
+<p>Your notes are stored only on this PC. In the default location, <strong>uninstalling Jotteo also deletes your notes</strong>, so make a backup before switching PCs or uninstalling.</p>
+<figure><img src="images/help/en-settings-backup.webp" width="1280" height="700" alt="Settings &gt; Backup: automatic backup options, and the Back up library and Restore from backup buttons" loading="lazy">
 <figcaption>Settings &gt; Backup</figcaption></figure>
+<h3>Back up manually</h3>
 <ol>
-<li>In the library, open Settings (<kbd>Ctrl</kbd>+<kbd>,</kbd>), go to Backup, click Back up… and choose where to save. All notes and folders are saved to a single .jotteolib file (items in the Trash are not included)</li>
-<li>To restore, click Restore… and choose the .jotteolib file, or double-click the file. Then choose Add to current library or Replace… (replacing deletes all current notes, including those in the Trash, and can't be undone)</li>
+<li>In the library, open Settings (<kbd>Ctrl</kbd>+<kbd>,</kbd>), go to Backup, click Back up… and choose where to save. All notes and folders are saved to a single .jotteolib file, together with your tags, elements and templates (items in the Trash are not included)</li>
+<li>To restore, click Restore… and choose the .jotteolib file, or double-click the file. Then choose Add to current library or Replace… (replacing deletes all current notes, folders, tags, elements and templates, including those in the Trash, and can't be undone)</li>
 </ol>
 <p>Backup and restore are unavailable while a note is open. Go back to the library, then open Settings.</p>
+<h3 id="auto-backup">Automatic backup</h3>
+<p>Turn on Automatic backup under Settings &gt; Backup to regularly save the whole library as a .jotteolib file to the folder you choose. Choose a synced folder such as OneDrive to keep a copy in the cloud too.</p>
+<ul>
+<li><strong>Frequency</strong>: Daily, Weekly or When changed. Nothing is saved if nothing has changed since the last backup</li>
+<li><strong>Backups to keep</strong>: 1–30 (5 by default). The oldest automatic backups are deleted; manual backups and backups from other PCs are kept</li>
+<li>Backups are made only while Jotteo is open. Click Back up now to make one at any time</li>
+<li>To restore, choose the file with Restore…, just like a manual backup</li>
+</ul>
+<h3>Change the library location</h3>
+<p>Under Settings &gt; General, click Change… next to Library location and choose a folder (an external drive, for example) to move your library there. Notes in a folder outside the app are kept even if you uninstall Jotteo. After reinstalling, choose the same folder to switch to that library. Use default location… moves the library back.</p>
+<p>Synced folders such as OneDrive and network folders aren't recommended, because data can be damaged while syncing. To keep a copy in the cloud, use automatic backup. You can change the location only while no note is open in any window.</p>
 </section>
 
 <section id="settings">
 <h2>Settings</h2>
 <p>Open Settings from the library sidebar or with <kbd>Ctrl</kbd>+<kbd>,</kbd>. Changes take effect right away.</p>
 <ul>
-<li><strong>General</strong>: Language, Theme (light or dark), On startup, Keep items in Trash for, and Reset settings</li>
-<li><strong>Pen and input</strong>: Only write with a pen, Write with the mouse, Pressure sensitivity, Vary width with pressure, Pen side button, Pen eraser end, Two-finger tap to undo, Low-latency inking and Lasso selects</li>
-<li><strong>Notes and pages</strong>: Add pages automatically, New note defaults and Show status bar</li>
-<li><strong>Backup</strong>: back up and restore the library</li>
-<li><strong>Keyboard shortcuts</strong>: the list of shortcuts</li>
-<li><strong>About</strong>: version, open source licenses and the Getting started guide (shows the first-launch guide again)</li>
+<li><strong>General</strong>: Language, Theme (Use system setting, Light or Dark), On startup, show (Library, Last open note or Windows from last time), When opening a .jotteo file, Keep items in Trash for, Library location, and Reset settings</li>
+<li><strong>Pen and input</strong>: Only write with a pen, Write with the mouse, Pressure sensitivity, Vary width with pressure, Stroke stabilization, Pen side button, Pen eraser end, Pen double-tap, Pen top button, Two-finger tap to undo, Low-latency inking, Draw and hold to make shapes, Hold the highlighter to straighten, Toolbar position, Left-handed mode and Lasso selects</li>
+<li><strong>Notes and pages</strong>: Scrolling direction, Add pages automatically, New note defaults, Invert paper in dark mode and Show status bar</li>
+<li><strong>Search and handwriting recognition</strong>: Handwriting recognition on or off, Recognition language, Recognition status and Recognize again</li>
+<li><strong>Backup</strong>: Automatic backup (folder, frequency and backups to keep), and backing up and restoring the library</li>
+<li><strong>Keyboard shortcuts</strong>: the list of shortcuts, and changing them (see <a href="#shortcuts">Keyboard shortcuts</a>)</li>
+<li><strong>About</strong>: version, open source licenses, privacy policy, the Getting started guide (shows the first-launch guide again), help, support and logs</li>
 </ul>
 </section>
 
 <section id="shortcuts">
 <h2>Keyboard shortcuts</h2>
+<p>The tables show the default keys. Under Settings &gt; Keyboard shortcuts you can change or remove the keys for most commands (a few, such as Undo and Copy, can't be changed). Rotate page and Copy page as image have no default key, but you can assign one there. The <kbd>Ctrl</kbd>+<kbd>/</kbd> list always shows your current keys.</p>
 <h3>Everywhere</h3>
 <table class="keys">
 <tbody>
@@ -215,6 +325,7 @@
 <tr><td>Search</td><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd></td></tr>
 <tr><td>Settings</td><td><kbd>Ctrl</kbd>+<kbd>,</kbd></td></tr>
 <tr><td>Keyboard shortcuts</td><td><kbd>Ctrl</kbd>+<kbd>/</kbd></td></tr>
+<tr><td>Help</td><td><kbd>F1</kbd></td></tr>
 <tr><td>Toggle full screen</td><td><kbd>F11</kbd></td></tr>
 <tr><td>Close window</td><td><kbd>Ctrl</kbd>+<kbd>W</kbd></td></tr>
 </tbody>
@@ -229,17 +340,21 @@
 <tr><td>Find in note</td><td><kbd>Ctrl</kbd>+<kbd>F</kbd></td></tr>
 <tr><td>Export</td><td><kbd>Ctrl</kbd>+<kbd>E</kbd></td></tr>
 <tr><td>Print</td><td><kbd>Ctrl</kbd>+<kbd>P</kbd></td></tr>
-<tr><td>Pen / highlighter / eraser / lasso / text</td><td><kbd>P</kbd> / <kbd>H</kbd> / <kbd>E</kbd> / <kbd>L</kbd> / <kbd>T</kbd></td></tr>
+<tr><td>Pen / highlighter / eraser / lasso</td><td><kbd>P</kbd> / <kbd>H</kbd> / <kbd>E</kbd> / <kbd>L</kbd></td></tr>
+<tr><td>Shapes / text / laser pointer</td><td><kbd>S</kbd> / <kbd>T</kbd> / <kbd>K</kbd></td></tr>
 <tr><td>Previous tool</td><td><kbd>Q</kbd></td></tr>
 <tr><td>Hold to pan</td><td><kbd>Space</kbd></td></tr>
+<tr><td>New text box (Text tool)</td><td><kbd>Enter</kbd></td></tr>
 <tr><td>Color presets 1–3</td><td><kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td></tr>
 <tr><td>Width presets 1–3</td><td><kbd>Shift</kbd>+<kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td></tr>
 <tr><td>Zoom in / out</td><td><kbd>Ctrl</kbd>+<kbd>=</kbd> / <kbd>Ctrl</kbd>+<kbd>-</kbd></td></tr>
 <tr><td>Fit width</td><td><kbd>Ctrl</kbd>+<kbd>0</kbd></td></tr>
 <tr><td>100%</td><td><kbd>Ctrl</kbd>+<kbd>1</kbd></td></tr>
 <tr><td>Previous / next page</td><td><kbd>PageUp</kbd> / <kbd>PageDown</kbd>, <kbd>Ctrl</kbd>+<kbd>↑</kbd> / <kbd>↓</kbd></td></tr>
+<tr><td>Previous / next page (horizontal scrolling)</td><td><kbd>←</kbd> / <kbd>→</kbd></td></tr>
 <tr><td>First / last page</td><td><kbd>Ctrl</kbd>+<kbd>Home</kbd> / <kbd>Ctrl</kbd>+<kbd>End</kbd></td></tr>
 <tr><td>Go to page</td><td><kbd>Ctrl</kbd>+<kbd>G</kbd></td></tr>
+<tr><td>Back / forward in page history</td><td><kbd>Alt</kbd>+<kbd>←</kbd> / <kbd>Alt</kbd>+<kbd>→</kbd></td></tr>
 <tr><td>Add page after this one</td><td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td></tr>
 <tr><td>Page panel</td><td><kbd>Ctrl</kbd>+<kbd>\</kbd></td></tr>
 <tr><td>Read mode</td><td><kbd>Ctrl</kbd>+<kbd>R</kbd></td></tr>
@@ -254,6 +369,7 @@
 <tr><td>Duplicate</td><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td></tr>
 <tr><td>Delete</td><td><kbd>Delete</kbd> / <kbd>Backspace</kbd></td></tr>
 <tr><td>Move (1 mm / 10 mm)</td><td>Arrow keys / <kbd>Shift</kbd>+arrow keys</td></tr>
+<tr><td>Edit text box (when only one is selected)</td><td><kbd>Enter</kbd> / <kbd>F2</kbd></td></tr>
 <tr><td>Deselect</td><td><kbd>Esc</kbd></td></tr>
 </tbody>
 </table>
@@ -261,6 +377,7 @@
 <table class="keys">
 <tbody>
 <tr><td>Rename</td><td><kbd>F2</kbd></td></tr>
+<tr><td>Open the selected note in a new window</td><td><kbd>Shift</kbd>+<kbd>Enter</kbd></td></tr>
 <tr><td>Delete (move to Trash)</td><td><kbd>Delete</kbd> / <kbd>Backspace</kbd></td></tr>
 <tr><td>Select all / deselect</td><td><kbd>Ctrl</kbd>+<kbd>A</kbd> / <kbd>Esc</kbd></td></tr>
 <tr><td>Open the menu</td><td><kbd>Shift</kbd>+<kbd>F10</kbd></td></tr>
@@ -271,23 +388,33 @@
 <section id="faq">
 <h2>FAQ</h2>
 <p><strong>Where are my notes stored?</strong><br>
-Only on your PC. They are never sent anywhere. Uninstalling Jotteo also deletes your notes, so <a href="#backup">back up</a> anything you want to keep.</p>
+Only on your PC. They are never sent anywhere. By default they are kept in the app's data folder, and uninstalling Jotteo also deletes them, so <a href="#backup">back up</a> anything you want to keep. You can also choose a different folder with Library location under Settings &gt; General.</p>
 <p><strong>Can I move my notes to another PC?</strong><br>
-Open a .jotteolib file made with Backup in Settings in Jotteo on the other PC to restore it. To move a single notebook, export it as .jotteo and import it.</p>
+Open a .jotteolib file made with Backup in Settings in Jotteo on the other PC to restore it. To move a single note, export it as .jotteo and import it.</p>
+<p><strong>Can Jotteo back up automatically?</strong><br>
+Yes. Turn on Automatic backup under Settings &gt; Backup and choose a folder. Choose a synced folder such as OneDrive so you can restore even if your PC breaks (see <a href="#auto-backup">Automatic backup</a>).</p>
 <p><strong>Do I need an account or an internet connection?</strong><br>
 No. Jotteo needs neither.</p>
+<p><strong>Can I search my handwriting?</strong><br>
+Yes. Jotteo reads your handwriting in the background, and both library search and Search in note find it. If a word isn't found, check under Settings &gt; Search and handwriting recognition that recognition is on and that no language pack is reported missing. Right after writing, or when you have many notes, recognition may take a little while to catch up.</p>
+<p><strong>Is my handwriting sent anywhere to be recognized?</strong><br>
+No. Recognition uses Windows handwriting recognition and runs only on this PC.</p>
 <p><strong>My finger leaves marks on the page.</strong><br>
 Turn on "Only write with a pen" under Settings &gt; Pen and input. Fingers will then only scroll and zoom.</p>
 <p><strong>Ink lags behind the pen.</strong><br>
-Make sure "Low-latency inking" is on under Settings &gt; Pen and input (it is on by default; requires Windows 11 24H2 or later and a supported GPU). It applies to pen strokes, not the highlighter.</p>
+Make sure "Low-latency inking" is on under Settings &gt; Pen and input (it is on by default; requires Windows 11 24H2 or later and a supported GPU). It applies to pen strokes (fountain pen, ballpoint and brush pen) and shapes, not the highlighter.</p>
+<p><strong>My lines turn into shapes or straight lines on their own.</strong><br>
+Holding the pen still after drawing turns the line into a shape or a straight line. Undo brings back your original line. To stop this, turn off "Draw and hold to make shapes" and "Hold the highlighter to straighten" under Settings &gt; Pen and input.</p>
 <p><strong>The eraser doesn't erase text boxes or images.</strong><br>
-The eraser only erases handwriting. Select text boxes and images with the lasso and press <kbd>Delete</kbd> or choose Delete in the menu.</p>
-<p><strong>Can I search my handwriting?</strong><br>
-Not yet. Search finds note and folder names and text in text boxes.</p>
+The eraser only erases handwriting and shapes. Select text boxes and images with the lasso and press <kbd>Delete</kbd> or choose Delete in the menu. For locked items, choose Unlock under More first.</p>
+<p><strong>Can I import password-protected PDFs?</strong><br>
+Yes. Enter the password when you import the PDF. The note then opens without a password.</p>
 <p><strong>HEIC images won't import.</strong><br>
 Install "HEVC Video Extensions" from the Microsoft Store.</p>
 <p><strong>Can I get back a note I deleted by mistake?</strong><br>
 Yes. Open Trash in the sidebar and click Restore (within 30 days of deleting it; you can change the period in Settings).</p>
+<p><strong>What should I send when I contact support?</strong><br>
+Under Settings &gt; About, click Open folder next to Logs and attach the files in that folder. The logs don't include the contents of your notes.</p>
 <p>If this doesn't solve your problem, contact us from the <a href="index.html#en">support page</a>.</p>
 </section>
 
