@@ -18,18 +18,20 @@
 
 <section id="ja" lang="ja" data-l="ja">
 <h1>プライバシーポリシー</h1>
-<p class="muted">施行日: 2026 年 10 月 4 日 ・ 改定日: 2026 年 10 月 21 日（v1.1）</p>
+<p class="muted">施行日: 2026 年 10 月 4 日 ・ 改定日: 2026 年 10 月 26 日（v1.2）</p>
 <p>このポリシーは、liris（以下「開発者」）が提供する Windows 用のノートアプリ Jotteo（以下「本アプリ」）での情報の扱いを説明します。</p>
 
 <h2>1. ノートの内容</h2>
 <p>本アプリで書いたノート（手書き・文字・画像・読み込んだ PDF を含みます）と設定は、お使いの PC の中にだけ保存されます。本アプリはノートの内容を外部へ送信せず、開発者がノートの内容を見ることはできません。</p>
 <ul>
 <li><strong>手書き認識</strong>: 手書きの検索とテキストへの変換は、Windows に入っている手書き認識の機能を使い、PC の中だけで行います。認識した結果もノートと一緒に PC の中に保存します。</li>
+<li><strong>画像の文字の認識</strong>: ページに置いた画像、画像を読み込んで作ったページと、スキャンした PDF のページの文字を、Windows に入っている文字認識（OCR）の機能を使って PC の中だけで読み取り、検索に使います。読み取った文字はノートと一緒に PC の中に保存し、ノートの書き出し（.jotteo）とバックアップ（.jotteolib）、書き出した PDF（下の「書き出した PDF」）に入ります。</li>
+<li><strong>手書きを整える・図の清書</strong>: 投げ縄の「手書きを整える」「図を清書」は、PC の中だけで処理し、外部へ何も送りません（文字をテキストにするときは、上の手書き認識を使います）。結果は、あなたが「適用」を押したときだけノートに入ります。設定の「AI 機能」を切ると、画像の文字の認識と、この 2 つを使いません（読み取り済みの画像の文字は、検索と PDF の書き出しに使います）。</li>
 <li><strong>カメラと録音</strong>: カメラで撮った写真と、マイクで録った音声（録音）は、ノートと一緒に PC の中にだけ保存し、送信しません。カメラとマイクを使うのは、あなたが「カメラで撮る」や録音のボタンを押したときだけです。カメラで撮る画面は Windows のものです。Windows の設定（プライバシーとセキュリティ &gt; カメラ / マイク）で、本アプリに使わせないようにできます。録音はノートの書き出し（.jotteo）とバックアップ（.jotteolib）に含まれます。PDF の書き出しには含まれません。録音だけを音声のファイル（.m4a）に書き出すこともできます。</li>
 <li><strong>Office 文書の取り込み</strong>: Word・PowerPoint の文書を取り込むときは、PC に入っている Microsoft Office を呼び出して PDF に変えます。変換は PC の中で行い、本アプリは文書を外部へ送りません（Office の動作は Microsoft の声明と Office の設定に従います）。</li>
 <li><strong>ノートのロック</strong>: パスワードロックは、ノートを画面に出さないようにする保護です。ノートのファイルは暗号化しません。パスワードはそのまま保存せず、確かめるための値（Argon2id）だけを、PC の中とバックアップ（.jotteolib）に保存します。Windows Hello で解くときは、本人の確認を Windows が行い、本アプリは顔・指紋・PIN を受け取りません。</li>
 <li><strong>版の履歴</strong>: 書いている間、ノートの過去の内容を版として、ノートと一緒に PC の中に自動で残します（30 日を過ぎた版と、50 を超えた古い版は消します。最も新しい版は古くても残します）。ノートの中身を消しても、消す前の内容はしばらく過去の版に残ります（第 5 節）。</li>
-<li><strong>書き出した PDF</strong>: PDF に書き出すとき、既定では手書き認識の結果を、手書きの位置に見えない文字として入れます（ほかのアプリで手書きの文字を検索できるようにするため）。書き出しのダイアログの「手書きの文字を検索できるようにする」を切ると入れません。PDF を人に渡すときは、見えない文字も一緒に渡ることにご注意ください。</li>
+<li><strong>書き出した PDF</strong>: PDF に書き出すとき、既定では手書きと画像から認識した文字を、手書き・画像の位置に見えない文字として入れます（ほかのアプリで検索できるようにするため）。書き出しのダイアログの「手書きと画像の文字を検索できるようにする」を切ると入れません。PDF を人に渡すときは、見えない文字も一緒に渡ることにご注意ください。</li>
 <li><strong>保存場所と自動バックアップ</strong>: ライブラリは、既定では PC の中のアプリ用の場所に保存します。設定で保存場所を変えたときのライブラリと、自動バックアップ・手動のバックアップは、あなたが選んだフォルダに保存します。そのフォルダを OneDrive などのクラウドのサービスが同期している場合は、そのサービスがファイルを扱います（そのサービスのプライバシーに関する声明に従います）。</li>
 <li><strong>共有・書き出し</strong>: Windows の「共有」や書き出し・印刷・コピーでノートを渡すのは、あなたが操作したときだけで、渡す先はあなたが選んだアプリ・ファイル・プリンターです。バックアップ（.jotteolib）には、設定の「バックアップに設定も含める」をオンにしたときだけ、本アプリの設定（この PC だけのものを除く）も入ります。テンプレートの書き出し（.jotteotpl）には、選んだテンプレートだけが入ります。</li>
 </ul>
@@ -41,17 +43,17 @@
 <p>読み込んだ PDF の中の Web のリンクを押したときも、既定のブラウザーでそのページが開きます。そのページへのアクセスは、そのサイトのポリシーに従って扱われます。</p>
 
 <h2>3. Microsoft Store が扱う情報</h2>
-<p>本アプリは Microsoft Store で配布しています。インストールや更新、Windows のエラー報告などで Microsoft が集める情報は、<a href="https://privacy.microsoft.com/privacystatement">Microsoft のプライバシーに関する声明</a>に従って扱われます。開発者は、Microsoft が提供する集計された統計（インストール数など）と、Windows の設定で許可された場合のクラッシュの報告を Partner Center で見ることがあります。これらに個人を特定できる情報やノートの内容は含まれません。本アプリが使う Windows の機能（手書き認識・共有・クリップボード・カメラ・マイク・Windows Hello など）が扱う情報も、同じ声明と Windows の設定に従います。</p>
+<p>本アプリは Microsoft Store で配布しています。インストールや更新、Windows のエラー報告などで Microsoft が集める情報は、<a href="https://privacy.microsoft.com/privacystatement">Microsoft のプライバシーに関する声明</a>に従って扱われます。開発者は、Microsoft が提供する集計された統計（インストール数など）と、Windows の設定で許可された場合のクラッシュの報告を Partner Center で見ることがあります。これらに個人を特定できる情報やノートの内容は含まれません。本アプリが使う Windows の機能（手書き認識・文字認識（OCR）・共有・クリップボード・カメラ・マイク・Windows Hello など）が扱う情報も、同じ声明と Windows の設定に従います。</p>
 <p>カメラで撮る画面には、Microsoft の Windows App SDK（Windows App Runtime）を使っています。Windows App Runtime は、Microsoft の利用条件に従い、動作の診断データを Microsoft へ送ることがあります。これは Windows の診断データの設定（プライバシーとセキュリティ &gt; 診断とフィードバック）に従い、Microsoft のプライバシーに関する声明に従って扱われます。本アプリのノートの内容（写真を含みます）は含まれません。</p>
 
 <h2>4. お問い合わせで送られる情報</h2>
 <p>お問い合わせは GitHub の Issue で受け付けています。Issue に書いた内容は公開され、GitHub, Inc. の<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">プライバシーに関する声明</a>に従って扱われます。ノートの内容や個人情報は書かないでください。開発者は、Issue の内容をお問い合わせへの対応と本アプリの改善にだけ使います。</p>
 
 <h2>5. データの削除</h2>
-<p>ノート（写真・録音・版の履歴を含みます）と設定は、本アプリの中で削除するか、本アプリをアンインストールすると PC から消えます。ただし、保存場所をアプリの外のフォルダに変えたライブラリと、バックアップのファイル（.jotteolib）はアンインストールしても残ります。要らなければご自身で削除してください。ノートの中身の一部を消しても、消す前の内容は、そのノートの過去の版に残ります（第 1 節「版の履歴」）。すぐに消したいときは、ノートを複製して複製したノートを一度開いてから、元のノートを削除し、ゴミ箱を空にしてください（複製したノートは版の履歴を持たず、開いたときに、使っていない写真・録音などのファイルを消します。複製したノートにはロックが付かないので、要るときは掛け直してください）。開発者の手元にあなたのデータはないため、開発者に削除を依頼する必要はありません。</p>
+<p>ノート（写真・録音・版の履歴を含みます）と設定は、本アプリの中で削除するか、本アプリをアンインストールすると PC から消えます。ただし、保存場所をアプリの外のフォルダに変えたライブラリと、バックアップのファイル（.jotteolib）はアンインストールしても残ります。要らなければご自身で削除してください。ノートの中身の一部を消しても、消す前の内容は、そのノートの過去の版に残ります（第 1 節「版の履歴」）。すぐに消したいときは、ノートを複製してから元のノートを削除し、ゴミ箱を空にしてください（複製したノートは版の履歴を持たず、今の内容が使っている写真・録音などのファイルだけを写します。複製したノートにはロックが付かないので、要るときは掛け直してください）。開発者の手元にあなたのデータはないため、開発者に削除を依頼する必要はありません。</p>
 
 <h2>6. このポリシーの変更</h2>
-<p>将来、同期や診断情報の送信など、外部と通信する機能を足すときは、その前にこのポリシーを改め、このページでお知らせします。診断情報の送信は、あなたが許可した場合にだけ行います。手書き認識などの処理は、PC の中だけで行います。</p>
+<p>将来、同期や診断情報の送信など、外部と通信する機能を足すときは、その前にこのポリシーを改め、このページでお知らせします。診断情報の送信は、あなたが許可した場合にだけ行います。手書き認識・画像の文字の認識・手書きを整える・図の清書などの処理は、PC の中だけで行います。</p>
 
 <h2>7. お問い合わせ先</h2>
 <p><a href="https://github.com/liris/jotteo-support/issues">https://github.com/liris/jotteo-support/issues</a></p>
@@ -59,18 +61,20 @@
 
 <section id="en" lang="en" data-l="en">
 <h1>Privacy Policy</h1>
-<p class="muted">Effective date: October 4, 2026 · Last updated: October 21, 2026 (v1.1)</p>
+<p class="muted">Effective date: October 4, 2026 · Last updated: October 26, 2026 (v1.2)</p>
 <p>This policy explains how Jotteo (the "App"), a note-taking app for Windows provided by liris (the "Developer"), handles information.</p>
 
 <h2>1. Your notes</h2>
 <p>Notes you create in the App (including handwriting, text, images and imported PDFs) and your settings are stored only on your PC. The App never sends the contents of your notes anywhere, and the Developer cannot see them.</p>
 <ul>
 <li><strong>Handwriting recognition</strong>: Handwriting search and conversion to text use the handwriting recognition built into Windows and run only on your PC. Recognition results are stored on your PC together with your notes.</li>
+<li><strong>Text recognition in images</strong>: Text in images you place on pages, in pages made from imported images and in scanned PDF pages is read only on your PC, using the optical character recognition (OCR) built into Windows, so that you can search it. The recognized text is stored on your PC together with your notes and is included when you export a note (.jotteo), back up your library (.jotteolib) or export a PDF (see "Exported PDFs" below).</li>
+<li><strong>Tidy handwriting and Clean up diagram</strong>: The lasso commands "Tidy handwriting" and "Clean up diagram" run only on your PC and send nothing anywhere (turning writing into text uses the handwriting recognition above). The results are added to your note only when you press "Apply". Turning off "AI features" in Settings stops text recognition in images and these two commands (text already recognized in images is still used for search and PDF export).</li>
 <li><strong>Camera and audio recording</strong>: Photos you take with the camera and audio you record with the microphone are stored only on your PC together with your notes and are never sent anywhere. The App uses the camera and the microphone only when you choose "Take photo" or press the record button. The camera screen is provided by Windows. You can turn off the App&#39;s access in Windows Settings (Privacy &amp; security &gt; Camera / Microphone). Recordings are included when you export a note (.jotteo) or back up your library (.jotteolib), but not in exported PDFs. You can also export a recording on its own as an audio file (.m4a).</li>
 <li><strong>Importing Office documents</strong>: When you import a Word or PowerPoint document, the App asks the Microsoft Office installed on your PC to convert it to PDF. The conversion runs on your PC, and the App does not send the document anywhere (Office itself is governed by Microsoft&#39;s statements and your Office settings).</li>
 <li><strong>Note lock</strong>: Password lock keeps a note from being shown on screen. It does not encrypt the note&#39;s files. Your password is not stored as is; only a value used to check it (Argon2id) is stored, on your PC and in backups (.jotteolib). When you unlock with Windows Hello, Windows verifies you, and the App never receives your face, fingerprint or PIN.</li>
 <li><strong>Version history</strong>: While you write, the App automatically keeps past versions of each note on your PC together with the note (versions older than 30 days and versions beyond the 50 most recent are removed, but the newest version is always kept). If you delete something from a note, the earlier content remains in past versions for a while (see section 5).</li>
-<li><strong>Exported PDFs</strong>: By default, when you export a PDF the App adds the handwriting recognition results as invisible text over your handwriting, so that other apps can search it. Turn off "Make handwriting searchable" in the export dialog to leave it out. When you give a PDF to someone, note that the invisible text goes with it.</li>
+<li><strong>Exported PDFs</strong>: By default, when you export a PDF the App adds the text recognized from your handwriting and images as invisible text over them, so that other apps can search it. Turn off "Make handwriting and text in images searchable" in the export dialog to leave it out. When you give a PDF to someone, note that the invisible text goes with it.</li>
 <li><strong>Storage location and automatic backups</strong>: By default, your library is stored in the App&#39;s own area on your PC. If you change the storage location, the library is saved in the folder you choose, and automatic and manual backups are also saved in folders you choose. If a cloud service such as OneDrive syncs that folder, that service handles the files under its own privacy statement.</li>
 <li><strong>Sharing and exporting</strong>: Notes leave the App through Windows Share, export, print or copy only when you do so, and only to the app, file or printer you choose. A backup (.jotteolib) includes the App&#39;s settings (except those specific to this PC) only if you turn on "Include settings in backups". An exported template (.jotteotpl) contains only the templates you choose.</li>
 </ul>
@@ -82,17 +86,17 @@
 <p>Clicking a web link in an imported PDF also opens that page in your default browser. Visits to that page are handled under that site's own policies.</p>
 
 <h2>3. Information handled by the Microsoft Store</h2>
-<p>The App is distributed through the Microsoft Store. Information Microsoft collects for installation, updates, Windows Error Reporting and similar purposes is handled under the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>. The Developer may view aggregated statistics (such as install counts) and, where permitted by your Windows settings, crash reports provided by Microsoft in Partner Center. These do not include personally identifiable information or the contents of your notes. Information handled by the Windows features the App uses (such as handwriting recognition, Share, the clipboard, the camera, the microphone and Windows Hello) is also governed by that statement and your Windows settings.</p>
+<p>The App is distributed through the Microsoft Store. Information Microsoft collects for installation, updates, Windows Error Reporting and similar purposes is handled under the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>. The Developer may view aggregated statistics (such as install counts) and, where permitted by your Windows settings, crash reports provided by Microsoft in Partner Center. These do not include personally identifiable information or the contents of your notes. Information handled by the Windows features the App uses (such as handwriting recognition, optical character recognition (OCR), Share, the clipboard, the camera, the microphone and Windows Hello) is also governed by that statement and your Windows settings.</p>
 <p>The camera screen uses Microsoft&#39;s Windows App SDK (Windows App Runtime). Under Microsoft&#39;s terms, the Windows App Runtime may send diagnostic data about its operation to Microsoft. This follows your Windows diagnostic data settings (Privacy &amp; security &gt; Diagnostics &amp; feedback) and is handled under the Microsoft Privacy Statement. It does not include the contents of your notes, including photos.</p>
 
 <h2>4. Information you send when contacting us</h2>
 <p>Support requests are accepted through GitHub Issues. Anything you post in an issue is public and is handled under the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. Please do not post the contents of your notes or personal information. The Developer uses issue contents only to respond to you and to improve the App.</p>
 
 <h2>5. Deleting your data</h2>
-<p>Your notes (including photos, recordings and version history) and settings are removed from your PC when you delete them in the App or uninstall the App. However, a library you moved to a folder outside the App and backup files (.jotteolib) remain after uninstalling; delete them yourself if you no longer need them. If you delete part of a note, the earlier content remains in that note&#39;s past versions (see "Version history" in section 1). To remove it right away, duplicate the note, open the duplicate once, then delete the original and empty the Trash (a duplicated note starts without version history, and opening it removes photos, recordings and other files it no longer uses; the duplicate isn&#39;t locked, so lock it again if needed). The Developer holds none of your data, so there is nothing to ask the Developer to delete.</p>
+<p>Your notes (including photos, recordings and version history) and settings are removed from your PC when you delete them in the App or uninstall the App. However, a library you moved to a folder outside the App and backup files (.jotteolib) remain after uninstalling; delete them yourself if you no longer need them. If you delete part of a note, the earlier content remains in that note&#39;s past versions (see "Version history" in section 1). To remove it right away, duplicate the note, then delete the original and empty the Trash (a duplicated note starts without version history and copies only the photos, recordings and other files its current content uses; the duplicate isn&#39;t locked, so lock it again if needed). The Developer holds none of your data, so there is nothing to ask the Developer to delete.</p>
 
 <h2>6. Changes to this policy</h2>
-<p>If we add features that communicate over the network, such as sync or diagnostics, we will update this policy and announce it on this page before they ship. Diagnostic data will be sent only if you allow it. Processing such as handwriting recognition is done on your PC.</p>
+<p>If we add features that communicate over the network, such as sync or diagnostics, we will update this policy and announce it on this page before they ship. Diagnostic data will be sent only if you allow it. Processing such as handwriting recognition, text recognition in images, Tidy handwriting and Clean up diagram is done on your PC.</p>
 
 <h2>7. Contact</h2>
 <p><a href="https://github.com/liris/jotteo-support/issues">https://github.com/liris/jotteo-support/issues</a></p>

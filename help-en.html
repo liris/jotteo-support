@@ -28,7 +28,7 @@
 <li><a href="#pages">Pages and viewing</a></li>
 <li><a href="#audio">Recording and playback</a></li>
 <li><a href="#library">Organizing notes and folders</a></li>
-<li><a href="#search">Search and handwriting recognition</a></li>
+<li><a href="#search">Search and text recognition</a></li>
 <li><a href="#pdf">Importing and exporting PDFs, images and Office documents</a></li>
 <li><a href="#backup">Backup and library location</a></li>
 <li><a href="#settings">Settings</a></li>
@@ -45,7 +45,7 @@
 <figcaption>Library</figcaption></figure>
 <ul>
 <li><strong>Sidebar</strong>: All notes, Favorites, Recent, Quick notes, Folders, Tags, Trash and Settings. In a narrow window it is hidden; open it with ≡ at the top left of the list</li>
-<li><strong>Search box</strong> (top): finds note and folder names, text in text boxes, handwriting and text in PDFs (see <a href="#search">Search and handwriting recognition</a>)</li>
+<li><strong>Search box</strong> (top): finds note and folder names, text in text boxes, handwriting, text in PDFs and text in images (see <a href="#search">Search and text recognition</a>)</li>
 <li><strong>New</strong> (top right): create a note, quick note or folder, or import a PDF, image or .jotteo file</li>
 <li>Above the list, choose the sort order (Name, Date created, Date modified, Manual) and switch between grid view and list view</li>
 </ul>
@@ -121,14 +121,22 @@
 <li><strong>Resize</strong>: drag a corner handle. The aspect ratio is kept (hold <kbd>Shift</kbd> to change it)</li>
 <li><strong>Rotate</strong>: drag the handle below the frame. It snaps every 15° (hold <kbd>Shift</kbd> to rotate freely)</li>
 <li><strong>Menu above the frame</strong>: Cut, Copy, Duplicate, Color, Fill (with closed shapes), Width (with strokes or shapes), Crop (with a single image), Delete and More</li>
-<li><strong>More</strong>: Play from here (see <a href="#audio">Recording and playback</a>), Convert to text and Copy as text (see <a href="#search">Search and handwriting recognition</a>), Convert to shapes, Bring to front, Bring forward, Send backward, Send to back, Lock and Unlock, Copy as image and Save as image, Add link, Open link, Edit link and Remove link (see <a href="#links">Links</a>), and Add to elements</li>
+<li><strong>More</strong>: Play from here (see <a href="#audio">Recording and playback</a>), Convert to text and Copy as text (see <a href="#search">Search and text recognition</a>), Convert to shapes, Tidy handwriting and Clean up diagram (see <a href="#ai">Tidy handwriting and Clean up diagram</a>), Bring to front, Bring forward, Send backward, Send to back, Lock and Unlock, Copy as image and Save as image, Add link, Open link, Edit link and Remove link (see <a href="#links">Links</a>), and Add to elements</li>
 </ul>
 <p>Convert to shapes turns each selected handwritten stroke into a line, circle, rectangle or other shape. Strokes that can't be recognized and highlighter strokes are left as they are. Undo brings the handwriting back.</p>
+<h3 id="ai">Tidy handwriting and Clean up diagram</h3>
+<p>Select handwriting with the lasso and use More. Both run only on this PC. The result first appears as a preview with your original strokes shown faintly; press Apply (<kbd>Enter</kbd>) in the bar at the bottom of the screen to replace them. Press Cancel (<kbd>Esc</kbd>) or tap outside the selection to leave everything as it was. After applying, a single Undo brings back the original handwriting.</p>
+<ul>
+<li><strong>Tidy handwriting</strong>: straightens lines of handwritten text and lines them up. The letters keep their shape; each word is only moved. Compare three styles in the bar: Straighten levels each line and aligns the bottoms of the words. Align also evens out word height, spacing, the left edge of lines and line spacing (indents, bullets and gaps between paragraphs are kept). Text gives the same result as Convert to text. Available when handwriting recognition is on and the language pack is installed</li>
+<li><strong>Clean up diagram</strong>: turns a handwritten flowchart or similar diagram into shapes, arrows and text boxes in one step. Boxes become rectangles, circles and other shapes lined up in rows and columns at matching sizes; arrows are attached to the boxes (see <a href="#connectors">Connectors</a>); and text inside a box becomes a text box centered in it. Clear "Turn text into text boxes" in the bar to keep the text handwritten. Strokes that can't be cleaned up (such as curved lines) stay as handwriting. You can select up to 500 strokes at a time</li>
+</ul>
+<p>Turn off AI features under Settings &gt; Text recognition to remove both commands from More.</p>
 <p><strong>Write with the pen while using the lasso</strong>: when this is turned on under Settings &gt; Pen and input, you can write outside the lasso selection with the pen without switching tools (using the Pen tool's current type, color and width). The selection stays, and you can still move it. Tap outside the selection with the pen to deselect. The mouse and fingers still draw a new lasso.</p>
 <p>What you copy can be pasted into other notes too (it is kept until you close the app). Copy as image copies the selected area as it looks on screen, so you can paste it into other apps. Save as image saves it as a PNG file.</p>
 <p>Lock shapes, text boxes and images so they can't be moved or deleted by accident. Locked items can still be selected. When only locked items are selected, the menu shows Unlock in place of Delete; otherwise choose Unlock under More.</p>
 <h3>Shapes <kbd>S</kbd></h3>
 <p>Turns what you draw into a line, arrow, circle, ellipse, triangle, rectangle, polygon or arc when you lift the pen. Lines that can't be recognized stay as handwriting. In the toolbar, choose the line color and width and the Fill (No fill, Same as line (translucent) or another color). With the Shapes tool, tap the outline of a shape to select it, then drag the vertex and end handles to change its form.</p>
+<p id="connectors"><strong>Connectors</strong>: when you finish a line, arrow or arc with an end near the outline of a shape such as a rectangle or circle, a text box or an image, the end attaches to that outline. When the line is selected, attached ends are shown as filled dots. Attached ends follow when you move, resize or rotate the shape they are attached to. You can also select the line and drag an end handle near an outline to attach it, or drop it away from the outline to detach it. Moving only the line detaches both ends (select it together with the shapes it connects to keep it attached).</p>
 <h3>Text <kbd>T</kbd></h3>
 <p>Click a page to add a text box and type with the keyboard (drag to set its width). With the Text tool, you can also press <kbd>Enter</kbd> to add a new box in the middle of the screen. Click outside or press <kbd>Esc</kbd> to finish. Move a text box with the lasso; click it with the Text tool to edit it again (or press <kbd>Enter</kbd> or <kbd>F2</kbd> when it is the only item selected).</p>
 <p>While editing, a format bar appears above the box.</p>
@@ -208,7 +216,7 @@
 <li><strong>Zoom</strong>: 25–800%. Click the zoom level at the bottom right for Fit width, Whole page or 100% (actual size)</li>
 <li><strong>Scrolling direction</strong>: under More &gt; Scrolling direction in the header, choose for each note whether pages scroll vertically or flip horizontally one at a time. When flipping, swipe with a finger or press <kbd>←</kbd> / <kbd>→</kbd>. Set the default for notes under Settings &gt; Notes and pages</li>
 <li><strong>Two-page view</strong>: choose More &gt; Two-page view in the header to show two pages side by side. Turn on "Show first page alone" to put page 1 on its own on the right and pair pages 2-3, 4-5 and so on. You can also switch it with "Two-page view" under Settings &gt; Notes and pages (it applies to all notes)</li>
-<li><strong>Search in note</strong> (<kbd>Ctrl</kbd>+<kbd>F</kbd>): finds text in text boxes, handwriting and text in PDFs, and highlights it in yellow on the page</li>
+<li><strong>Search in note</strong> (<kbd>Ctrl</kbd>+<kbd>F</kbd>): finds text in text boxes, handwriting, text in PDFs and text in images, and highlights it in yellow on the page</li>
 <li><strong>Read mode</strong> (<kbd>Ctrl</kbd>+<kbd>R</kbd>): turns writing off so the pen only scrolls, so you don't leave stray marks while reading. You can still select PDF text and follow links</li>
 <li><strong>Full screen</strong> (<kbd>F11</kbd>): hides the header and page panel and floats the toolbar. Press <kbd>F11</kbd> or <kbd>Esc</kbd> to return</li>
 <li><strong>Paper in dark mode</strong>: turn on "Invert paper in dark mode" in Settings to show paper and ink in dark colors with the dark theme. Exports and printing keep the original colors</li>
@@ -320,12 +328,12 @@
 </section>
 
 <section id="search">
-<h2>Search and handwriting recognition</h2>
+<h2>Search and text recognition</h2>
 <h3>Search the library</h3>
-<p>The search box at the top of the library (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>) finds note and folder names, text in text boxes, handwriting and text in PDFs. Click a match in a page to open that page with the match highlighted in yellow. Text inside locked notes isn't found until you unlock them (see <a href="#lock">Lock notes</a>).</p>
+<p>The search box at the top of the library (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd>) finds note and folder names, text in text boxes, handwriting, text in PDFs and text in images. Click a match in a page to open that page with the match highlighted in yellow. Text inside locked notes isn't found until you unlock them (see <a href="#lock">Lock notes</a>).</p>
 <p>Use the buttons above the results to narrow them down.</p>
 <ul>
-<li><strong>Type</strong>: All, Handwriting, PDF or Text</li>
+<li><strong>Type</strong>: All, Handwriting, PDF, Text or Image (text in scanned PDF pages counts as PDF)</li>
 <li><strong>Folder</strong>: only a folder you choose (including the folders inside it) or Quick notes</li>
 <li><strong>Tags</strong>: only notes that have all the tags you choose</li>
 <li><strong>Modified</strong>: Today, Yesterday, This week, Last week, This month, Last month, This year or Last year</li>
@@ -333,9 +341,17 @@
 <h3>Handwriting recognition</h3>
 <p>Jotteo reads your handwriting in the background so you can search it. It uses Windows handwriting recognition and runs only on this PC. The contents of your notes are never sent anywhere.</p>
 <ul>
-<li>Under Settings &gt; Search and handwriting recognition, turn recognition on or off, choose the recognition language (Japanese, English or Japanese + English) and check the progress</li>
+<li>Under Settings &gt; Text recognition, turn recognition on or off, choose the recognition language (Japanese, English or Japanese + English) and check the progress</li>
 <li>Recognition needs the Windows handwriting language pack for that language. If Settings says it is missing, add it from Open language settings</li>
 <li>The recognized text isn't shown on screen. Messy or misread words may not be found</li>
+</ul>
+<h3 id="image-text">Text in images</h3>
+<p>Jotteo also reads text in images you place on pages (photos, screenshots and so on), in pages made from imported images, and in scanned PDF pages (PDF pages without text) in the background so you can search it. It uses Windows optical character recognition (OCR) and runs only on this PC.</p>
+<ul>
+<li>The language follows the handwriting recognition language setting. Windows needs Optical character recognition for that language. If Settings &gt; Text recognition says it is missing, add it in Windows Settings &gt; Time &amp; language &gt; Language &amp; region, under that language's options</li>
+<li>When AI features is turned off under Settings &gt; Text recognition, no new images are read. Text already read is still used for search and PDF export</li>
+<li>The recognized text isn't shown on screen. It is included in exported notes (.jotteo), backups (.jotteolib) and exported PDFs (see <a href="#pdf">Export and print</a>)</li>
+<li>Very small images (shorter side under 32 pixels) aren't read</li>
 </ul>
 <h3>Turn handwriting into text</h3>
 <p>Select handwriting with the lasso and use More.</p>
@@ -372,7 +388,7 @@
 </ul>
 <h3>Export and print</h3>
 <p>On the note screen, click Export in the header or press <kbd>Ctrl</kbd>+<kbd>E</kbd> to export a PDF or images.</p>
-<figure><img src="images/help/en-export-pdf.webp" width="792" height="732" alt="The Export dialog: a preview on the left, and format, range, paper, cover, outline, searchable handwriting and handwriting options on the right" loading="lazy">
+<figure><img src="images/help/en-export-pdf.webp" width="792" height="732" alt="The Export dialog: a preview on the left, and format, range, paper, cover, outline, searchable handwriting and image text, and handwriting options on the right" loading="lazy">
 <figcaption>Export</figcaption></figure>
 <ul>
 <li><strong>Format</strong>: PDF, PNG or JPEG. For images, choose the resolution (96, 150 or 300 dpi); two or more pages are saved as one file per page</li>
@@ -380,7 +396,7 @@
 <li><strong>Include paper lines and background</strong>: when off, only what you wrote is exported on white pages</li>
 <li><strong>Include the cover</strong> (PDF): adds the cover as the first page</li>
 <li><strong>Export the outline as PDF bookmarks</strong> (PDF): turns the note's outline into PDF bookmarks</li>
-<li><strong>Make handwriting searchable</strong> (PDF; on by default): adds the handwriting recognition results as invisible text at the position of your handwriting, so other apps can search, select and copy it. When you give the PDF to someone, the invisible text goes with it</li>
+<li><strong>Make handwriting and text in images searchable</strong> (PDF; on by default): adds the text recognized from your handwriting and images as invisible text at their position, so other apps can search, select and copy it. When you give the PDF to someone, the invisible text goes with it</li>
 <li><strong>Split vertically extending pages into sheets</strong> (when the note has pages that extend downward): when off, each page is exported as one long page</li>
 <li><strong>Your writing</strong> (PDF; when the note has PDF pages): Flatten into the pages or Keep as PDF annotations. With Keep as PDF annotations, pen, highlighter and shape strokes and images are exported as PDF annotations, so you can select, move and delete them in other PDF apps (text boxes are still flattened)</li>
 <li><strong>Handwriting</strong> (PDF): Vector (sharp at any zoom) or Image (looks the same in older viewers). Pencil strokes are exported as images either way</li>
@@ -421,7 +437,7 @@
 <li><strong>Restore as a new note</strong>: creates a separate note named "Note name (version from date)" in the same place</li>
 <li>Versions are stored on your PC together with the note. They are not included in .jotteo files or backups (.jotteolib)</li>
 </ul>
-<p>If you delete something from a note, the earlier content remains in past versions for a while. To remove it right away, duplicate the note, open the duplicate once, then delete the original and permanently delete it from the Trash (a duplicated note starts without version history, and opening it removes photos, recordings and other files it no longer uses; the duplicate isn't locked, so lock it again if needed).</p>
+<p>If you delete something from a note, the earlier content remains in past versions for a while. To remove it right away, duplicate the note, then delete the original and permanently delete it from the Trash (a duplicated note starts without version history and copies only the photos, recordings and other files its current content uses; the duplicate isn't locked, so lock it again if needed).</p>
 <h3>Change the library location</h3>
 <p>Under Settings &gt; General, click Change… next to Library location and choose a folder (an external drive, for example) to move your library there. Notes in a folder outside the app are kept even if you uninstall Jotteo. After reinstalling, choose the same folder to switch to that library. Use default location… moves the library back.</p>
 <p>Synced folders such as OneDrive and network folders aren't recommended, because data can be damaged while syncing. To keep a copy in the cloud, use automatic backup. You can change the location only while no note tabs are open in any window.</p>
@@ -435,7 +451,7 @@
 <li><strong>Pen and input</strong>: Only write with a pen, Write with the mouse, Pressure sensitivity, Vary width and darkness with pressure, Stroke stabilization, Pen side button, Pen eraser end, Pen double-tap, Pen top button, Pen haptic feedback, Two-finger tap to undo, Low-latency inking, Draw and hold to make shapes, Hold the highlighter to straighten, Snap highlighter to PDF text, Scribble to erase, Toolbar position, Left-handed mode, Lasso selects and Write with the pen while using the lasso</li>
 <li><strong>Notes and pages</strong>: Scrolling direction, Two-page view, Add pages automatically, New note defaults, Invert paper in dark mode, Insert images at original resolution, Show status bar, and Note lock (password and Unlock with Windows Hello)</li>
 <li><strong>Recording</strong>: Microphone for recording</li>
-<li><strong>Search and handwriting recognition</strong>: Handwriting recognition on or off, Recognition language, Recognition status and Recognize again</li>
+<li><strong>Text recognition</strong>: Handwriting recognition on or off, Recognition language, AI features on or off (reading text in images, and Tidy handwriting and Clean up diagram in the lasso menu), Recognition status (handwriting and images) and Recognize again</li>
 <li><strong>Backup</strong>: Automatic backup (folder, frequency and backups to keep), Include settings in backups, and backing up and restoring the library</li>
 <li><strong>Keyboard shortcuts</strong>: keys that work from other apps (quick note), the list of shortcuts, and changing them (see <a href="#shortcuts">Keyboard shortcuts</a>)</li>
 <li><strong>About</strong>: version, open source licenses, privacy policy, the Getting started guide (shows the first-launch guide again), help, support and logs</li>
@@ -529,9 +545,11 @@ Yes. Turn on Automatic backup under Settings &gt; Backup and choose a folder. Ch
 <p><strong>Do I need an account or an internet connection?</strong><br>
 No. Jotteo needs neither.</p>
 <p><strong>Can I search my handwriting?</strong><br>
-Yes. Jotteo reads your handwriting in the background, and both library search and Search in note find it. If a word isn't found, check under Settings &gt; Search and handwriting recognition that recognition is on and that no language pack is reported missing. Right after writing, or when you have many notes, recognition may take a little while to catch up.</p>
-<p><strong>Is my handwriting sent anywhere to be recognized?</strong><br>
-No. Recognition uses Windows handwriting recognition and runs only on this PC.</p>
+Yes. Jotteo reads your handwriting in the background, and both library search and Search in note find it. If a word isn't found, check under Settings &gt; Text recognition that recognition is on and that no language pack is reported missing. Right after writing, or when you have many notes, recognition may take a little while to catch up.</p>
+<p><strong>Can I search text in photos and images?</strong><br>
+Yes. Jotteo reads text in images on your pages and in scanned PDFs in the background, so search finds it. If a word isn't found, check under Settings &gt; Text recognition that AI features is on and that no OCR language is reported missing (see <a href="#image-text">Text in images</a>).</p>
+<p><strong>Is my note sent anywhere for handwriting recognition or AI features?</strong><br>
+No. Handwriting recognition, reading text in images, Tidy handwriting and Clean up diagram all run only on this PC.</p>
 <p><strong>My finger leaves marks on the page.</strong><br>
 Turn on "Only write with a pen" under Settings &gt; Pen and input. Fingers will then only scroll and zoom.</p>
 <p><strong>Ink lags behind the pen.</strong><br>
