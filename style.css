@@ -64,6 +64,7 @@ main.wide { max-width: 960px; }
 .eyebrow { margin: 0; color: var(--ink); font-weight: 700; font-size: 0.95rem; }
 .hero h1 { font-size: 2.1rem; line-height: 1.35; margin: 8px 0 12px; }
 .lead { font-size: 1.1rem; max-width: 40em; }
+.maker { color: var(--muted); max-width: 40em; margin-top: -4px; }
 .store { margin: 20px 0 28px; }
 .store a { display: inline-block; border-radius: 6px; }
 .store img { display: block; width: 176px; height: 48px; }
