@@ -8,7 +8,7 @@ This repository hosts the product page, use cases, help, support and privacy pol
 - サポート / Support: https://liris.github.io/jotteo-support/#ja ・ https://liris.github.io/jotteo-support/#en
 - ヘルプ / Help: https://liris.github.io/jotteo-support/help.html ・ https://liris.github.io/jotteo-support/help-en.html
 - プライバシーポリシー / Privacy Policy: https://liris.github.io/jotteo-support/privacy.html
-- 不具合の報告・要望 / Bug reports and requests: [Issues](https://github.com/liris/jotteo-support/issues)
+- 不具合の報告・要望 / Bug reports and requests: [お問い合わせのフォーム / Contact form](https://docs.google.com/forms/d/e/1FAIpQLSctzRzBnqN3Wds4sMEjpRbq36beiBOKvS9YRPBk_GlLHS8aUQ/viewform) ・ [Issues](https://github.com/liris/jotteo-support/issues)
 
 アプリのソースコードはここにはありません。The app's source code is not in this repository.
 ページは別のリポジトリから反映しているので、このリポジトリを直接編集しないでください。
