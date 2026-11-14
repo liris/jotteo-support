@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jotteo ヘルプ</title>
-<link rel="stylesheet" href="style.css?v=3241c858">
+<link rel="stylesheet" href="style.css?v=ff09af2d">
 <link rel="icon" href="icon.png">
 <link rel="alternate" hreflang="en" href="help-en.html">
 <script src="lang.js?v=e5487996"></script>
@@ -19,9 +19,11 @@
 
 <h1>ヘルプ</h1>
 <p>Jotteo（ジョッティオ）の使い方をまとめています。アプリの中で <kbd>F1</kbd> を押すと、このページを開きます。キーボードのショートカットは、<kbd>Ctrl</kbd>+<kbd>/</kbd> を押すと一覧できます。</p>
+<p>Windows 版と iPad 版の使い方は同じです。iPad で違うところは「<a href="#ipad">iPad で使うとき</a>」にまとめています。</p>
 
 <nav class="toc" aria-label="目次">
 <ol>
+<li><a href="#ipad">iPad で使うとき</a></li>
 <li><a href="#screens">画面の見方</a></li>
 <li><a href="#input">ペン・指・マウスの使い方</a></li>
 <li><a href="#tools">ツール</a></li>
@@ -36,6 +38,43 @@
 <li><a href="#faq">よくある質問</a></li>
 </ol>
 </nav>
+
+<section id="ipad">
+<h2>iPad で使うとき</h2>
+<p>iPad 版（iPadOS 18 以降）は、Windows 版と同じノート（.jotteo・.jotteolib・.jotteotpl）を使い、ほとんどの機能が同じです。違うところをまとめます。</p>
+<h3>Apple Pencil と指</h3>
+<ul>
+<li>Apple Pencil で書き、指でスクロール・ピンチでズームします。2 本指のタップで元に戻す、3 本指のタップでやり直しです。設定の「ペンと入力」の「ペンのみで書く」をオフにすると、指でも書けます（決めていない間は、iPad の設定「Apple Pencil でのみ描画」に従います）</li>
+<li>Apple Pencil のダブルタップとスクイーズ（Apple Pencil Pro）は、iPad の 設定 &gt; Apple Pencil で選んだ動作に従います（消しゴムとの切り替え、色・ツールのパレットなど）。スクイーズの「パレットを表示」では、ペン先の近くにツールと色・太さのパレットを出します</li>
+<li>Apple Pencil Pro では、書いて止めて図形にしたときなどに、ペンが短く振動します（設定の「ペンの触覚フィードバック」）</li>
+<li>Windows のペンの消しゴム端・サイドボタン・トップボタン、低遅延描画の設定はありません</li>
+</ul>
+<h3>すぐ書き始める</h3>
+<ul>
+<li>ホーム画面の Jotteo のアイコンを長押しして「クイックノート」「新しいノート」を選べます</li>
+<li>ホーム画面・ロック画面にクイックノートのウィジェットを置けます。押すとクイックノートを作ります</li>
+</ul>
+<h3>キーボード</h3>
+<p>外付けキーボードでは、このページの <kbd>Ctrl</kbd> を <kbd>⌘</kbd>（Command）に、<kbd>Alt</kbd> を <kbd>⌥</kbd>（Option）に読み替えてください（例: 元に戻すは <kbd>⌘</kbd>+<kbd>Z</kbd>）。<kbd>⌘</kbd> を長押しすると、使えるキーの一覧が出ます。キーの割り当ては変えられません。主な違い: ヘルプは <kbd>⌘</kbd>+<kbd>?</kbd>、全画面は <kbd>⌘</kbd>+<kbd>⌃</kbd>+<kbd>F</kbd>、ページの履歴で戻る・進むは <kbd>⌘</kbd>+<kbd>[</kbd>・<kbd>⌘</kbd>+<kbd>]</kbd>、やり直しは <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>Z</kbd>、次・前のタブは <kbd>⌃</kbd>+<kbd>Tab</kbd>・<kbd>⌃</kbd>+<kbd>⇧</kbd>+<kbd>Tab</kbd>。</p>
+<h3>ウィンドウ</h3>
+<p>Split View・Slide Over・ステージマネージャで、ノートを別のウィンドウに開けます（ライブラリでノートを長押し →「新しいウィンドウで開く」、または、iPadOS 26 以降ではノートを画面の端へドラッグ）。</p>
+<h3>ノートの保存場所と、Jotteo を削除したとき</h3>
+<ul>
+<li>ノートは iPad の中の Jotteo の場所に保存します。保存場所は変えられません</li>
+<li><strong>Jotteo を削除すると、ノートも消えます。</strong>iPad の 設定 &gt; 一般 &gt; iPad ストレージ の「App を取り除く」なら、ノートは残ります（入れ直すと戻ります）</li>
+<li>残したいノートは、設定の「バックアップ」で .jotteolib にバックアップしてください。「自動バックアップ」の保存先には、「ファイル」App の場所（iCloud Drive など）を選べます</li>
+<li>Windows で作ったノートは、.jotteo・.jotteolib を「ファイル」App で押すか、共有で Jotteo に送ると開けます</li>
+</ul>
+<h3>手書きの認識</h3>
+<p>手書きの認識・画像の文字の読み取り・手書きを整える・図を清書は、iPad の中だけで行います。日本語の手書きの認識は iPadOS 27 以降で使えます。それより前の iPadOS では英語の手書きだけを認識し、設定の「文字の認識」にそのことを出します（Windows で認識した日本語の結果は、そのまま検索に使えます）。</p>
+<h3>そのほか</h3>
+<ul>
+<li>Word・PowerPoint の文書は、Office のアプリがなくても読み込めます（見た目が元と違うことがあります。<a href="#office">Word・PowerPoint の文書を読み込む</a>）</li>
+<li>ノートのロックは、Windows Hello の代わりに Face ID・Touch ID で解けます。Jotteo を離れて 2 分たつか、iPad をロックすると、またロックします</li>
+<li>録音は、ほかのアプリに切り替えても、iPad をロックしても続きます</li>
+<li>iPad にないもの: 保存場所の変更、スクリーンショットの挿入、キーの割り当ての変更、アプリの外から使うキー</li>
+</ul>
+</section>
 
 <section id="screens">
 <h2>画面の見方</h2>
@@ -369,6 +408,8 @@
 <li>PDF を 1 つだけ選んだときは、読み込むページの範囲（例: 1-3, 5）を指定できます</li>
 <li>パスワード付きの PDF は、読み込むときにパスワードを聞きます。読み込んだ後は、パスワードなしで開けます</li>
 <li>PDF のしおりは、ノートの目次に入ります</li>
+<li>PDF の手書きの注釈（ほかのアプリで PDF に書いたペン・蛍光ペンの線）は、書き直せる線として読み込みます。不透明な線はボールペン、半透明の線は蛍光ペンになり、色と太さは注釈のまま、筆圧はなく一定の太さです。ほかの注釈（ハイライト・図形・文字など）は、ページの背景としてそのまま表示します。Word・PowerPoint から変えた文書とテンプレートの PDF では、手書きの注釈も背景のままです</li>
+<li>Jotteo の書き出しで「PDF の注釈にする」を選んだ PDF を読み込み直すと、ペン・蛍光ペン・図形の線が書き直せる線に戻ります（筆圧による太さの変化は消えて一定の太さになり、手書きを検索できるようにした見えない文字は背景に残ります）。Windows 版 v1.2 までで書き出した PDF とほかのアプリの一部の PDF は、線の太さが 0.35 mm で揃います</li>
 <li>ほかのアプリから Windows の「共有」で PDF や画像を Jotteo に送っても、新しいノートとして読み込みます</li>
 </ul>
 <h3 id="office">Word・PowerPoint の文書を読み込む</h3>
@@ -378,6 +419,12 @@
 <li>ノートに入るのは PDF に変えたものです。元の文書は入りません</li>
 <li>ノートの「PDF を挿入」でも、Word・PowerPoint の文書を選べます</li>
 <li>Word・PowerPoint が入っていないときは、「Word が入っていないため読み込めませんでした」のように出て、読み込めません。Excel などほかの Office 文書は読み込めません</li>
+</ul>
+<p>iPad では、Office のアプリがなくても、iPad の内蔵の表示で文書を PDF に変えて読み込みます（変換は iPad の中で行い、文書の中の外の画像やスクリプトは読み込みません）。そのため、PC の Word・PowerPoint で開いたときと見た目が違うことがあります。</p>
+<ul>
+<li>改ページの位置、字の形、図の位置が元の文書と変わることがあります</li>
+<li>Word の見出しはノートの目次になりません</li>
+<li>iPad の表示で開けない文書（一部のマクロ入り・テンプレートの形式など）、パスワード付きの文書、壊れた文書は「読み込めませんでした」と出ます</li>
 </ul>
 <h3>ノートに PDF のページを足す</h3>
 <p>ページ一覧の下の「PDF を挿入」（末尾）、ページのメニューの「後ろに PDF を挿入」、ノートへの PDF のドラッグ＆ドロップで、今のノートにページを足せます。白紙のページは、普通のページの追加で間に入れられます。</p>

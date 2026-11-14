@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jotteo Help</title>
-<link rel="stylesheet" href="style.css?v=3241c858">
+<link rel="stylesheet" href="style.css?v=ff09af2d">
 <link rel="icon" href="icon.png">
 <link rel="alternate" hreflang="ja" href="help.html">
 <script src="lang.js?v=e5487996"></script>
@@ -19,9 +19,11 @@
 
 <h1>Help</h1>
 <p>How to use Jotteo. In the app, press <kbd>F1</kbd> to open this page, and <kbd>Ctrl</kbd>+<kbd>/</kbd> to see all keyboard shortcuts.</p>
+<p>Jotteo works the same on Windows and iPad. What is different on iPad is collected in “<a href="#ipad">Using Jotteo on iPad</a>”.</p>
 
 <nav class="toc" aria-label="Contents">
 <ol>
+<li><a href="#ipad">Using Jotteo on iPad</a></li>
 <li><a href="#screens">The screens</a></li>
 <li><a href="#input">Pen, touch and mouse</a></li>
 <li><a href="#tools">Tools</a></li>
@@ -36,6 +38,43 @@
 <li><a href="#faq">FAQ</a></li>
 </ol>
 </nav>
+
+<section id="ipad">
+<h2>Using Jotteo on iPad</h2>
+<p>Jotteo for iPad (iPadOS 18 or later) uses the same notes as the Windows version (.jotteo, .jotteolib and .jotteotpl), and almost every feature works the same. Here is what is different.</p>
+<h3>Apple Pencil and touch</h3>
+<ul>
+<li>Write with Apple Pencil, scroll with a finger and pinch to zoom. Tap with two fingers to undo and three fingers to redo. Turn off “Only write with a pen” in Settings &gt; Pen and input to write with your finger too (until you choose, this follows the iPad setting “Only Draw with Apple Pencil”)</li>
+<li>Apple Pencil double-tap and squeeze (Apple Pencil Pro) do what you chose in the iPad’s Settings &gt; Apple Pencil (switch to the eraser, show the color or tool palette, and so on). With squeeze set to “Show palette”, a palette of tools, colors and widths appears near the pen tip</li>
+<li>With Apple Pencil Pro, the pencil gives a short tap when you hold to draw a shape, for example (Settings: “Pen haptic feedback”)</li>
+<li>The Windows pen eraser end, barrel button and top button, and the low-latency inking setting, are not available</li>
+</ul>
+<h3>Start writing right away</h3>
+<ul>
+<li>Touch and hold the Jotteo icon on the Home Screen and choose Quick note or New note</li>
+<li>Add the Quick note widget to the Home Screen or Lock Screen. Tap it to create a quick note</li>
+</ul>
+<h3>Keyboard</h3>
+<p>On a hardware keyboard, read <kbd>Ctrl</kbd> on this page as <kbd>⌘</kbd> (Command) and <kbd>Alt</kbd> as <kbd>⌥</kbd> (Option), for example <kbd>⌘</kbd>+<kbd>Z</kbd> to undo. Hold down <kbd>⌘</kbd> to see the available keys. Key assignments can’t be changed. The main differences: Help is <kbd>⌘</kbd>+<kbd>?</kbd>, full screen is <kbd>⌘</kbd>+<kbd>⌃</kbd>+<kbd>F</kbd>, back and forward in page history are <kbd>⌘</kbd>+<kbd>[</kbd> and <kbd>⌘</kbd>+<kbd>]</kbd>, redo is <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>Z</kbd>, and the next and previous tab are <kbd>⌃</kbd>+<kbd>Tab</kbd> and <kbd>⌃</kbd>+<kbd>⇧</kbd>+<kbd>Tab</kbd>.</p>
+<h3>Multiple windows</h3>
+<p>Open notebooks in separate windows with Split View, Slide Over and Stage Manager (touch and hold a notebook in the library &gt; Open in New Window, or, on iPadOS 26 or later, drag the notebook to the edge of the screen).</p>
+<h3>Where notes are stored, and deleting Jotteo</h3>
+<ul>
+<li>Notes are stored in Jotteo’s own storage on your iPad. The location can’t be changed</li>
+<li><strong>Deleting Jotteo also deletes your notes.</strong> If you use “Offload App” in the iPad’s Settings &gt; General &gt; iPad Storage, your notes are kept and come back when you reinstall</li>
+<li>Back up notes you want to keep to a .jotteolib file in Settings &gt; Backup. For automatic backups, you can choose a location in the Files app, such as iCloud Drive</li>
+<li>To open notes made on Windows, tap the .jotteo or .jotteolib file in the Files app, or share it to Jotteo</li>
+</ul>
+<h3>Handwriting recognition</h3>
+<p>Handwriting recognition, reading text in images, Tidy handwriting and Clean up diagram all run on your iPad. Japanese handwriting recognition requires iPadOS 27 or later. On earlier versions, only English handwriting is recognized, and Settings &gt; Text recognition says so (Japanese results recognized on Windows can still be searched).</p>
+<h3>Other differences</h3>
+<ul>
+<li>Word and PowerPoint documents can be imported without the Office apps (they may look different from the original. See <a href="#office">Import Word and PowerPoint documents</a>)</li>
+<li>Locked notebooks can be opened with Face ID or Touch ID instead of Windows Hello. They lock again 2 minutes after you leave Jotteo, or when you lock your iPad</li>
+<li>Recording keeps going when you switch to another app or lock your iPad</li>
+<li>Not available on iPad: changing the library location, inserting screenshots, changing key assignments, and the shortcut key used from other apps</li>
+</ul>
+</section>
 
 <section id="screens">
 <h2>The screens</h2>
@@ -369,6 +408,8 @@
 <li>When you pick a single PDF, you can choose which pages to import (e.g. 1-3, 5)</li>
 <li>For a password-protected PDF, Jotteo asks for the password when importing. After that, the note opens without a password</li>
 <li>Bookmarks in the PDF are added to the note's outline</li>
+<li>Handwritten annotations in a PDF (pen and highlighter strokes written in other apps) are imported as strokes you can edit. Opaque strokes become ballpoint pen and translucent ones become highlighter, keeping their color and width, with no pressure (an even width). Other annotations (highlights, shapes, text and so on) are shown as part of the page background. In documents converted from Word or PowerPoint and in template PDFs, handwritten annotations also stay in the background</li>
+<li>If you re-import a PDF exported from Jotteo with Keep as PDF annotations, pen, highlighter and shape strokes become editable strokes again (width changes from pressure are lost and strokes get an even width; the invisible text that makes handwriting searchable stays in the background). In PDFs exported with Jotteo for Windows v1.2 or earlier and some PDFs from other apps, strokes all get a width of 0.35 mm</li>
 <li>You can also send PDFs and images to Jotteo from other apps with Windows Share; they are imported as new notes</li>
 </ul>
 <h3 id="office">Import Word and PowerPoint documents</h3>
@@ -378,6 +419,12 @@
 <li>The note contains the converted PDF, not the original document</li>
 <li>You can also choose Word and PowerPoint documents with Insert PDF in a note</li>
 <li>Without Word or PowerPoint, Jotteo says, for example, "Couldn't import because Word isn't installed" and doesn't import the file. Excel and other Office documents can't be imported</li>
+</ul>
+<p>On iPad, you don't need the Office apps: Jotteo converts the document to PDF with iPad's built-in viewer and then imports it (the conversion runs on your iPad, and pictures or scripts that the document loads from elsewhere aren't loaded). Because of this, the result can look different from the document opened in Word or PowerPoint on a PC.</p>
+<ul>
+<li>Page breaks, fonts and the position of pictures can differ from the original document</li>
+<li>Word headings don't become the note's outline</li>
+<li>Documents that iPad's viewer can't open (some macro-enabled documents and templates, for example), password-protected documents and damaged documents show "Couldn't import"</li>
 </ul>
 <h3>Add PDF pages to a note</h3>
 <p>Use Insert PDF below the page panel (at the end), Insert PDF after in a page's menu, or drag a PDF onto the note. To put a blank page in between, just add a page.</p>

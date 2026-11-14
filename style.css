@@ -68,6 +68,8 @@ main.wide { max-width: 960px; }
 .store { margin: 20px 0 28px; }
 .store a { display: inline-block; border-radius: 6px; }
 .store img { display: block; width: 176px; height: 48px; }
+.store img.appstore { width: auto; }
+.store a + a { margin-left: 12px; }
 .shot { margin: 0; }
 .shot img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 8px 28px rgba(31, 35, 40, 0.12); }
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; margin-bottom: 40px; }
